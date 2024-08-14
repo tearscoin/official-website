@@ -1,0 +1,1864 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth; /* Abilita lo scroll fluido */
+}
+
+:root {
+    --color1: #0c343c;
+    --color2: #f1c343;
+    --color3: #e9e9e9;
+
+    --mediaH2: 2.5em; 
+}
+
+body{
+    font-family: 'poppins', 'sanserif';
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: var(--color1);
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/*--------------------------------------------------------------*/
+/* SECTION LAYOUT                                               */
+/*--------------------------------------------------------------*/
+.main{
+    width: auto;
+    height: 100vh;
+}
+
+.about{
+    width: auto;
+    height: 100vh;
+}
+
+.roadmap{
+    width: auto;
+    height: 100vh;
+}
+
+.tokenomics{
+    width: auto;
+    height: 100vh;
+}
+
+.buy{
+    width: auto;
+    height: 100vh;
+}
+
+
+/*--------------------------------------------------------------*/
+/* MAIN                                                         */
+/*--------------------------------------------------------------*/
+
+/* HEADER */
+.main .header {
+    font-family: 'Mitr Regular';
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    background-color: var(--color1);
+}
+
+.main .header h1{
+    color: var(--color2);
+    font-size: 20em;
+    line-height: 35vh;
+}
+
+.main .header h3{
+    color: var(--color3);
+    font-size: 5em;
+}
+
+/* Socials */
+.main .header .socials {
+    display: block;
+}
+
+.main .header .socials .socials-container{
+    padding-top: 20vh;
+    padding-bottom: 21vh;
+    align-items: center;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    /* margin-right: 200px; */
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--color3);
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--color1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.btn i {
+    margin-right: 10px;
+    font-size: 2em;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); */
+}
+
+/* Navbar */
+.main .header .navbar{
+    background-color: var(--color2);
+    display: flex;
+    justify-content:space-evenly;
+    font-size: 2em;
+    margin: 0% 0%;
+}
+
+.main .header .navbar ul li{
+    display: inline-block;
+    /* padding: 0vh; */
+}
+
+.main .header .navbar ul li a {
+    color: var(--color1);
+    padding: 1.5vh 20px;
+    display: block;
+    font-weight: 600;
+}
+
+.main .header .navbar ul li a:hover {
+    color: var(--color1);
+    opacity: 0.95;
+    transition: 0.55s ease;
+    transform: translateY(-3px);
+}
+
+/*--------------------------------------------------------------*/
+/* About                                                        */
+/*--------------------------------------------------------------*/
+.about{
+    background-color: var(--color1);
+    color: var(--color3);
+    display: block;
+}
+
+.about h2{
+    font-size: 4em;
+    color: var(--color2);
+    padding-left: 1%;
+}
+
+.about .container-para{
+    padding-top: 3%;
+    color: var(--color3);
+    font-size: 2em;
+    display: block;
+    text-align:justify;
+    max-width: 95vw;
+}
+
+.about .container-para .para{
+    display: flex;
+    padding: 0.5% 0.5%;
+}
+
+.about .container-para .img-about{
+    padding-top: 3%;
+    width: 40%;
+    height: auto;
+    float: left;
+}
+
+/*--------------------------------------------------------------*/
+/* Roadmap                                                      */
+/*--------------------------------------------------------------*/
+.roadmap{
+    background-color: var(--color1);
+    color: var(--color2);
+    display: block;
+    height: auto;
+}
+
+.roadmap h2{
+    font-size: 3.5em;
+    color: var(--color2);
+    padding-left: 20px;
+}
+
+.roadmap .card-container{
+    
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    padding-left: 1.5%;
+
+    display:inline-flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card{
+    width: 280px;
+    height: 600px;
+    background-color: var(--color2);
+    color: var(--color1);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px black;        
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 4.5vh;
+    margin-right: 4.5vh;
+}
+
+
+.card .roadmap-img1{
+    width: 215px;
+    height: 200px;
+    padding-left: 55px;
+    padding-top: 0px;
+}
+
+.card .roadmap-img2{
+    width: 215px;
+    height: 200px;
+    padding-left: 55px;
+    padding-top: 15px;
+}
+
+.card .roadmap-img3{
+    width: 235px;
+    height: 195px;
+    padding-left: 45px;
+    padding-top: 20px;
+    margin-bottom: 4px;
+}
+
+.card .roadmap-img4{
+    width: 220px;
+    height: 200px;
+    padding-left: 50px;
+    padding-top: 25px;
+}
+
+.card .roadmap-img5{
+    width: 250px;
+    height: 200px;
+    padding-left: 28px;
+    padding-top: 25px;
+}
+
+.card-content{
+    padding: 16px;
+}
+
+.card-content h3{
+    font-size: 1.5em;
+    margin-bottom: 8px;
+}
+
+.cex{
+    padding-top: 4vh;
+    padding-bottom: 6vh;
+
+    color: var(--color3);
+    font-size: 1.5em;;
+    text-align: center;
+
+    
+    font-weight: bold;
+}
+
+/*--------------------------------------------------------------*/
+/* Tokenomics                                                   */
+/*--------------------------------------------------------------*/
+.tokenomics{
+    background-color: var(--color1);
+    color: var(--color3);
+    display: block;
+}
+
+.tokenomics h2{
+    font-size: 3.5em;
+    color: var(--color2);
+    padding-left: 20px;
+}
+
+.tokenomics .bar-container{
+    float: left;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    padding-top: 5vh;
+    padding-left: 90px;
+}
+
+
+.tokenomics .bar-container .bar100{
+    width: 1700px;
+    height: 100PX;
+
+    background-color: var(--color2);
+    border-color: var(--color1);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px black;
+
+    
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--color1);
+    text-align: center;
+
+}
+
+/* Single bar container layout */
+.tokenomics .bar-container .cont-bar{
+    display: flex;
+    margin-top: 2vh;
+}
+
+
+/* BAR 50 */
+.tokenomics .bar-container .cont-bar .bar50-text{
+    width: 850px;
+    height: 100PX;
+
+    color:var(--color3);
+
+    font-size: 1.15em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.tokenomics .bar-container .cont-bar .bar50{
+    width: 850px;
+    height: 100PX;
+
+    background-color: var(--color2);
+    border-color: var(--color1);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px black;
+
+    font-size: 1.15em;
+    font-weight: bold;
+    color: var(--color1);
+    text-align: left;
+}
+
+
+/* BAR 25 */
+.tokenomics .bar-container .cont-bar .bar25-text{
+    width: 850px;
+    height: 100PX;
+
+    color:var(--color3);
+
+    font-size: 1.15em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.tokenomics .bar-container .bar25{
+    width: 525PX;
+    height: 100PX;
+
+    background-color: var(--color2);
+    border-color: var(--color1);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px black;
+
+    
+    font-size: 1.15em;
+    font-weight: bold;
+    color: var(--color1);
+    text-align: left;
+}
+
+/* BAR 15 */
+.tokenomics .bar-container .cont-bar .bar15-text{
+    width: 850px;
+    height: 100PX;
+
+    color:var(--color3);
+
+    font-size: 1.15em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.tokenomics .bar-container .bar15{
+    width: 310PX;
+    height: 100PX;
+
+    background-color: var(--color2);
+    border-color: var(--color1);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px black;
+
+    
+    font-size: 1.15em;
+    font-weight: bold;
+    color: var(--color1);
+    text-align: left;
+}
+
+/* BAR 10 */
+.tokenomics .bar-container .cont-bar .bar10-text{
+    width: 850px;
+    height: 100PX;
+
+    color:var(--color3);
+
+    font-size: 1.15em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.tokenomics .bar-container .bar10{
+    width: 170PX;
+    height: 100PX;
+
+    background-color: var(--color2);
+    border-color: var(--color1);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px black;
+
+    
+    font-size: 1.15em;
+    font-weight: bold;
+    color: var(--color1);
+    text-align: left;
+}
+
+.tokenomics .bar-container .bar100 p
+{
+    padding-top: 29px;
+    padding-left: 20px;
+}
+
+.tokenomics .bar-container .bar50 p, 
+.tokenomics .bar-container .bar25 p, 
+.tokenomics .bar-container .bar15 p, 
+.tokenomics .bar-container .bar10 p,
+.tokenomics .bar-container .cont-bar .bar50-text,
+.tokenomics .bar-container .cont-bar .bar25-text,
+.tokenomics .bar-container .cont-bar .bar15-text,
+.tokenomics .bar-container .cont-bar .bar10-text
+{
+    padding-top: 36px;
+    padding-left: 20px;
+}
+
+.tokenomics .bar-container .lp-container{
+    margin-top: 4.7vh;
+    margin-bottom: 4.3vh;
+    align-items: center;
+    margin-left: 0vw;
+}
+
+
+.tokenomics .lp {
+
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+
+    width: 500px;
+    height: 150px;
+
+    background-color: #0a2d33;
+    border-color: var(--color1);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px black;
+
+    
+    
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--color2);
+    text-align: center;
+
+    display:inline-flex;
+    margin-left: 2vw;
+}
+
+.tokenomics .lp p{
+    margin-top: 35px;
+}
+
+
+
+
+/*--------------------------------------------------------------*/
+/* Buy                                                          */
+/*--------------------------------------------------------------*/
+.buy{
+    background-color: var(--color1);
+    color: var(--color2);
+    display: block;
+}
+
+.buy h2{
+    font-size: 3.5em;
+    color: var(--color2);
+    padding-left: 20px;
+}
+
+
+.buy .tools {
+    display: flex;
+    padding: 11vh 18%;
+}
+
+
+.buy .tools .dexscreener {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.buy .tools .dexscreener img{
+    width: 25vh;
+    height: 25vh;
+    transition: transform 0.55s ease;
+}
+.buy .tools .dexscreener img:hover{
+    transform: translateY(-10px);
+    opacity: 0.75;
+}
+
+.buy .tools .dextools {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.buy .tools .dextools img{
+    width: 25vh;
+    height: 25vh;
+    transition: transform 0.55s ease;
+}
+.buy .tools .dextools img:hover{
+    transform: translateY(-10px);
+    opacity: 0.75;
+}
+
+
+.ca {
+    text-align: center;
+    position: relative;
+    margin-top: 13vh;
+    margin-bottom: 10vh;
+}
+
+.copy-box {
+    background-color: #0a2d33;
+    border-radius: 70px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 40px 150px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.copy-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.copy-box:active {
+    transform: scale(0.95);
+}
+
+.copy-box.dimmed {
+    opacity: 0;
+    transition: opacity 0.7s ease;
+}
+
+#text-to-copy {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--color2);
+    transition: color 0.6s ease;
+}
+
+.copy-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.7s ease;
+    pointer-events: none;
+}
+
+.copy-overlay.show {
+    opacity: 0.8;
+    transition: opacity 0.5s ease;
+}
+
+
+
+
+
+/*--------------------------------------------------------------*/
+/* FOOTER                                                       */
+/*--------------------------------------------------------------*/
+footer {
+    text-align: center;
+    color: var(--color1);
+    padding: 20px 0;
+    font-size: 14px;
+    background-color: var(--color2);
+}
+
+footer hr {
+    width: 50%;
+    margin: 20px auto;
+    border: none;
+    border-top: 1px solid black;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------*/
+/* Responsive Design <=600px                                                                   */
+/*---------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 600px){
+ 
+    .header{
+        padding-top: 7vh;
+    }
+
+    .main .header h1{
+        color: var(--color2);
+        font-size: 6em;
+        line-height: 12vh;
+    }
+    
+    .main .header h3{
+        color: var(--color3);
+        font-size: 1.35em;
+    }
+
+    /* Socials */
+    .main .header .socials {
+        display: block;
+    }
+    
+    .main .header .socials .socials-container{
+        padding-top: 30vh;
+        padding-bottom: 30vh;
+        align-items: center;
+    }
+    
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        font-size: 1.2em;
+        font-weight: 600;
+        color: var(--color3);
+        text-align: center;
+        text-decoration: none;
+        background-color: var(--color1);
+        transition: none;
+
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    .btn i {
+        font-size: 1.8em;
+    }
+    
+    .btn:hover {
+        transform: translateY(-4px);
+        /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); */
+    }
+    
+    
+    /* Navbar */
+    .main .header .navbar{
+        background-color: var(--color2);
+        display: flex;
+        justify-content:space-evenly;
+        font-size: 1.05em;
+        text-align: center;
+    }
+    
+    .main .header .navbar ul li{
+        display: inline-block;
+        padding: 5px;
+    }
+    
+    .main .header .navbar ul li a {
+        color: var(--color1);
+        padding: 2px 10px;
+        display: block;
+        font-weight: 600;
+    }
+
+    .main .header .navbar ul li a:hover {
+        color: var(--color1);
+        opacity: 1;
+        transition: none;
+        transform: none;
+    }
+
+    /*--------------------------------------------------------------*/
+    /* About                                                        */
+    /*--------------------------------------------------------------*/
+    .about{
+        background-color: var(--color1);
+        color: var(--color3);
+        display: block;
+    }
+
+    .about h2{
+        font-size: 2.5em;
+        color: var(--color2);
+        padding-left: 1.5%;
+        padding-bottom: 0.5%;
+    }
+
+    .about .img-about{
+        max-width: 40vh;
+        max-height: 40vh;  
+        width: auto;
+        height: auto;
+    }
+
+    .about .container-para{
+        color: var(--color3);
+        font-size: 100%;
+        display: block;
+        text-align:left;
+        padding-right: 6%;
+        font-size: auto;
+    }
+
+    .about .container-para .para{
+        display: block;
+        padding-left: 7%;
+        text-align: justify;
+    }
+
+    .about .container-para .img-about{
+        width: 100%;
+        height: auto;
+        float: left;
+        padding-top: 0;
+        padding-left: 9%;
+        padding-bottom: 5%;
+    }
+
+
+    /*--------------------------------------------------------------*/
+    /* Roadmap                                                      */
+    /*--------------------------------------------------------------*/
+    .roadmap{
+        background-color: var(--color1);
+        color: var(--color2);
+        display: block;
+        height: auto;
+    }
+    
+    .roadmap h2{
+        font-size: var(--mediaH2);
+        color: var(--color2);
+        padding-left: 1.5%;
+        padding-bottom: 0.5%;
+    }
+    
+    .roadmap .card-container{
+        display:inline-flex;
+        justify-content:space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+    .card{
+        width: 280px;
+        height: 600px;
+        background-color: var(--color2);
+        color: var(--color1);
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0px 2px 4px black;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        margin-left: 2vh;
+        margin-right: 2vh;
+    }
+    
+    .card .roadmap-img1{
+        width: 215px;
+        height: 200px;
+        padding-left: 55px;
+        padding-top: 0px;
+    }
+    
+    .card .roadmap-img2{
+        width: 215px;
+        height: 200px;
+        padding-left: 55px;
+        padding-top: 15px;
+    }
+    
+    .card .roadmap-img3{
+        width: 235px;
+        height: 195px;
+        padding-left: 45px;
+        padding-top: 20px;
+        margin-bottom: 4px;
+    }
+    
+    .card .roadmap-img4{
+        width: 220px;
+        height: 200px;
+        padding-left: 50px;
+        padding-top: 25px;
+    }
+    
+    .card .roadmap-img5{
+        width: 250px;
+        height: 200px;
+        padding-left: 28px;
+        padding-top: 25px;
+    }
+    
+    .card-content{
+        padding: 16px;
+    }
+    
+    .card-content h3{
+        font-size: 1.5em;
+        margin-bottom: 8px;
+    }
+
+    .cex{
+
+        color: var(--color3);
+        font-size: 0.9em;
+        text-align: center;
+    
+        padding-top: 0px;
+        padding-right: 0px;
+        font-weight: bold;
+
+        padding-top: 2vh;
+        padding-bottom: 3vh;
+    }
+
+    /*--------------------------------------------------------------*/
+    /* Tokenomics                                                   */
+    /*--------------------------------------------------------------*/
+    .tokenomics{
+        background-color: var(--color1);
+        color: var(--color3);
+        display: block;
+        height: 100vh;
+    }
+
+    .tokenomics h2{
+        font-size: var(--mediaH2);
+        color: var(--color2);
+        padding-left: 1.5%;
+        padding-bottom: 0.5%;
+    }
+
+    .tokenomics .bar-container{
+        float: left;
+        justify-content:space-evenly;
+        flex-wrap: wrap;
+        padding-top: 2.1vh;
+        padding-left: 2.3vh;
+        display: block;
+    }
+
+
+    .tokenomics .bar-container .bar100{
+        width: 90vw;
+        height: 5vh;
+
+        background-color: var(--color2);
+        border-color: var(--color1);
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px black;
+
+        
+        font-size: 1.2em;
+        font-weight: bold;
+        color: var(--color1);
+        text-align: center;
+
+    }
+
+    /* Single bar container layout */
+    .tokenomics .bar-container .cont-bar{
+        display: flex;
+        margin-top: 2vh;
+    }
+
+
+    /* BAR 50 */
+    .tokenomics .bar-container .cont-bar .bar50-text{
+        width: auto;
+        height: 5vh;
+
+        color:var(--color3);
+
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .tokenomics .bar-container .cont-bar .bar50{
+        width: 45vw;
+        height: 5vh;
+
+        background-color: var(--color2);
+        border-color: var(--color1);
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px black;
+
+        
+        font-size: 1.2em;
+        font-weight: bold;
+        color: var(--color1);
+        text-align: left;
+    }
+
+
+    /* BAR 25 */
+    .tokenomics .bar-container .cont-bar .bar25-text{
+        width: auto;
+        height: 5vh;
+
+        color:var(--color3);
+
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .tokenomics .bar-container .bar25{
+        width: 28vw;
+        height: 5vh;
+
+        background-color: var(--color2);
+        border-color: var(--color1);
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px black;
+
+        
+        font-size: 1.15em;
+        font-weight: bold;
+        color: var(--color1);
+        text-align: left;
+    }
+
+    /* BAR 15 */
+    .tokenomics .bar-container .cont-bar .bar15-text{
+        width: auto;
+        height: 5vh;
+
+        color:var(--color3);
+
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .tokenomics .bar-container .bar15{
+        width: 17vw;
+        height: 5vh;
+
+        background-color: var(--color2);
+        border-color: var(--color1);
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px black;
+
+        
+        font-size: 1.15em;
+        font-weight: bold;
+        color: var(--color1);
+        text-align: left;
+    }
+
+    /* BAR 10 */
+    .tokenomics .bar-container .cont-bar .bar10-text{
+        width: auto;
+        height: 5vh;
+
+        color:var(--color3);
+
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .tokenomics .bar-container .bar10{
+        width: 12vw;
+        height: 5vh;
+
+        background-color: var(--color2);
+        border-color: var(--color1);
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px black;
+
+        
+        font-size: 1.15em;
+        font-weight: bold;
+        color: var(--color1);
+        text-align: left;
+    }
+
+    .tokenomics .bar-container .bar100 p
+    {
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+
+    .tokenomics .bar-container .bar50 p, 
+    .tokenomics .bar-container .bar25 p, 
+    .tokenomics .bar-container .bar15 p, 
+    .tokenomics .bar-container .bar10 p,
+    .tokenomics .bar-container .cont-bar .bar50-text,
+    .tokenomics .bar-container .cont-bar .bar25-text,
+    .tokenomics .bar-container .cont-bar .bar15-text,
+    .tokenomics .bar-container .cont-bar .bar10-text
+    {
+        padding-top: 10px;
+        padding-left: 7px;
+    }
+
+
+    .tokenomics .bar-container .lp-container{
+        margin-top: 4.3vh;
+        align-items: center;
+        margin-left: 0vw;
+    }
+
+
+    .tokenomics .bar-container .lp-container .lp {
+
+        display:inline-flex;
+        justify-content:space-evenly;
+        flex-wrap: wrap;
+
+        width: 90vw;
+        height: 15vh;
+
+        background-color: none;
+        border-color: var(--color1);
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px black;
+
+        margin-left: 0;
+        margin-bottom: 1.5vh;
+        
+        font-size: 2em;
+        font-weight: bold;
+        color: var(--color2);
+        text-align: center;
+
+    }
+
+    .tokenomics .lp p{
+        margin-top: 43px;
+    }
+
+
+
+    /*--------------------------------------------------------------*/
+    /* Buy                                                          */
+    /*--------------------------------------------------------------*/
+    .buy{
+        background-color: var(--color1);
+        color: var(--color3);
+        display: block;
+        height: 100vh;
+    }
+
+    .buy h2{
+        font-size: var(--mediaH2);
+        color: var(--color2);
+        padding-left: 1.5%;
+        padding-bottom: 0.5%;
+    }
+
+    .buy .tools {
+        display: block;
+        padding: 5vh 18%;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .buy .tools .dexscreener {
+        padding-left: 24%;
+        padding-right: 0%; 
+        padding-top: 10%;
+        padding-bottom: 25%;
+    }
+    .buy .tools .dexscreener img{
+        width: 15vh;
+        height: 15vh;
+        transition: transform 0.55s ease;
+    }
+    .buy .tools .dexscreener img:hover{
+        transform: translateY(-10px);
+        opacity: 0.75;
+    }
+
+    .buy .tools .dextools {
+        padding-left: 24%;
+        padding-right: 0%;
+        padding-top: 30%;
+        padding-bottom: 15%;
+    }
+    .buy .tools .dextools img{
+        width: 15vh;
+        height: 15vh;
+        transition: transform 0.55s ease;
+    }
+    .buy .tools .dextools img:hover{
+        transform: translateY(-10px);
+        opacity: 0.75;
+    }
+
+
+    .ca {
+        text-align: center;
+        position: relative;
+        margin-top: 5.5vh;
+        margin-bottom: 10vh;
+    }
+
+    .copy-box {
+        background-color: #1a505a;
+        border-radius: 70px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        padding: 10% 2%;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+    }
+
+    .copy-box:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .copy-box:active {
+        transform: scale(0.95);
+    }
+
+    .copy-box.dimmed {
+        opacity: 0;
+        transition: opacity 0.7s ease;
+    }
+
+    #text-to-copy {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: var(--color2);
+        transition: color 0.6s ease;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    .copy-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 20px 40px;
+        border-radius: 10px;
+        opacity: 0;
+        transition: opacity 0.7s ease;
+        pointer-events: none;
+    }
+
+    .copy-overlay.show {
+        opacity: 0.8;
+        transition: opacity 0.5s ease;
+    }
+
+
+    /*--------------------------------------------------------------*/
+    /* FOOTER                                                       */
+    /*--------------------------------------------------------------*/
+    footer {
+        text-align: center;
+        color: var(--color1);
+        padding: 20px 0;
+        font-size: 14px;
+        background-color: var(--color2);
+    }
+
+    footer hr {
+        width: 50%;
+        margin: 20px auto;
+        border: none;
+        border-top: 1px solid black;
+        font-weight: bold;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------*/
+/* Responsive Design > 600px and <=900px                        */
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 1700px) and (min-width: 600px){
+ 
+    .main .header{
+        padding-top: 4vh;
+    }
+
+    .main .header h1{
+        color: var(--color2);
+        font-size: 6em;
+        line-height: 28vh;
+    }
+    
+    .main .header h3{
+        color: var(--color3);
+        font-size: 1.35em;
+    }
+
+    /* Socials */
+    .main .header .socials {
+        display: block;
+    }
+    
+    .main .header .socials .socials-container{
+        padding-top: 20vh;
+        padding-bottom: 20vh;
+        align-items: center;
+    }
+    
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        font-size: 1.2em;
+        font-weight: 600;
+        color: var(--color3);
+        text-align: center;
+        text-decoration: none;
+        background-color: var(--color1);
+        transition: none;
+
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    .btn i {
+        font-size: 1.8em;
+    }
+    
+    .btn:hover {
+        transform: translateY(-4px);
+        /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); */
+    }
+    
+    
+    /* Navbar */
+    .main .header .navbar{
+        background-color: var(--color2);
+        display: flex;
+        justify-content:space-evenly;
+        font-size: 1.05em;
+        text-align: center;
+    }
+    
+    .main .header .navbar ul li{
+        display: inline-block;
+        padding: 5px;
+    }
+    
+    .main .header .navbar ul li a {
+        color: var(--color1);
+        padding: 2px 10px;
+        display: block;
+        font-weight: 600;
+    }
+
+    .main .header .navbar ul li a:hover {
+        color: var(--color1);
+        opacity: 1;
+        transition: none;
+        transform: none;
+    }
+
+    /*--------------------------------------------------------------*/
+    /* About                                                        */
+    /*--------------------------------------------------------------*/
+    .about{
+        background-color: var(--color1);
+        color: var(--color3);
+        display: block;
+        height: auto;
+    }
+
+    .about h2{
+        font-size: 2.5em;
+        color: var(--color2);
+        padding-left: 1.5%;
+        padding-bottom: 0.5%;
+    }
+
+    .about .container-para .img-about{
+        max-width: 40vh;
+        max-height: 40vh;  
+        width: auto;
+        height: auto;
+    }
+
+    .about .container-para{
+
+        padding-top: 3vh;
+        padding-right: 0%;
+        padding-left: 3.5%;
+        padding-bottom: 12vh;
+
+        color: var(--color3);
+        font-size: auto;
+        display: block;
+        text-align: justify;
+
+        font-size: 1.1em;
+    }
+
+    .about .container-para .para{
+        display: block;
+        padding: 0;
+    }
+
+
+    /*--------------------------------------------------------------*/
+    /* Roadmap                                                      */
+    /*--------------------------------------------------------------*/
+    .roadmap{
+        background-color: var(--color2);
+        color: var(--color1);
+        display: block;
+        height: auto;
+    }
+    
+    .roadmap h2{
+        font-size: var(--mediaH2);
+        color: var(--color1);
+        padding-left: 1.5%;
+        padding-bottom: 0.5%;
+    }
+    
+    .roadmap .card-container{
+        display:inline-flex;
+        justify-content:space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 10vh;
+        padding-bottom: 0px;
+    }
+    
+    .card{
+        width: 280px;
+        height: 600px;
+        background-color: var(--color1);
+        color: var(--color3);
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0px 2px 4px black;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        margin-left: 2vh;
+        margin-right: 2vh;
+    }
+    
+    .card .roadmap-img1{
+        width: 215px;
+        height: 200px;
+        padding-left: 55px;
+        padding-top: 0px;
+    }
+    
+    .card .roadmap-img2{
+        width: 215px;
+        height: 200px;
+        padding-left: 55px;
+        padding-top: 15px;
+    }
+    
+    .card .roadmap-img3{
+        width: 235px;
+        height: 195px;
+        padding-left: 45px;
+        padding-top: 20px;
+        margin-bottom: 4px;
+    }
+    
+    .card .roadmap-img4{
+        width: 220px;
+        height: 200px;
+        padding-left: 50px;
+        padding-top: 25px;
+    }
+    
+    .card .roadmap-img5{
+        width: 250px;
+        height: 200px;
+        padding-left: 28px;
+        padding-top: 25px;
+    }
+    
+    .card-content{
+        padding: 16px;
+    }
+    
+    .card-content h3{
+        font-size: 1.5em;
+        margin-bottom: 8px;
+    }
+
+    .cex { 
+        color: var(--color1);
+        font-size: 0.05;
+        text-align: center;
+    
+        padding-top: 0px;
+        padding-right: 0px;
+        font-weight: bold;
+
+        
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 4vh;
+        padding-bottom: 5vh;
+     
+    }
+
+   
+
+    /*--------------------------------------------------------------*/
+    /* Tokenomics                                                   */
+    /*--------------------------------------------------------------*/
+    .tokenomics{
+        background-color: var(--color1);
+        color: var(--color3);
+        display: block;
+        height: 100vh;
+    }
+
+    .tokenomics h2{
+        font-size: var(--mediaH2);
+        color: var(--color2);
+        padding-left: 1.5%;
+        padding-bottom: 0.5%;
+    }
+
+    .tokenomics .bar-container{
+        float: left;
+        justify-content:space-evenly;
+        flex-wrap: wrap;
+        padding-top: 5vh;
+        padding-left: 2.3vh;
+        display: block;
+        width: auto;
+    }
+
+
+    .tokenomics .bar-container .bar100{
+        width: 90vw;
+        height: 5vh;
+
+        background-color: var(--color2);
+        border-color: var(--color1);
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px black;
+
+        
+        font-size: 1em;
+        font-weight: bold;
+        color: var(--color1);
+        text-align: center;
+
+    }
+
+    /* Single bar container layout */
+    .tokenomics .bar-container .cont-bar{
+        display: flex;
+        margin-top: 2vh;
+    }
+
+
+    /* BAR 50 */
+    .tokenomics .bar-container .cont-bar .bar50-text{
+        width: auto;
+        height: 5vh;
+
+        color:var(--color3);
+
+        font-size: 1em;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .tokenomics .bar-container .cont-bar .bar50{
+        width: 45vw;
+        height: 5vh;
+
+        background-color: var(--color2);
+        border-color: var(--color1);
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px black;
+
+        
+        font-size: 1em;
+        font-weight: bold;
+        color: var(--color1);
+        text-align: left;
+    }
+
+
+    /* BAR 25 */
+    .tokenomics .bar-container .cont-bar .bar25-text{
+        width: auto;
+        height: 5vh;
+
+        color:var(--color3);
+
+        font-size: 1em;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .tokenomics .bar-container .bar25{
+        width: 28vw;
+        height: 5vh;
+
+        background-color: var(--color2);
+        border-color: var(--color1);
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px black;
+
+        
+        font-size: 1em;
+        font-weight: bold;
+        color: var(--color1);
+        text-align: left;
+    }
+
+    /* BAR 15 */
+    .tokenomics .bar-container .cont-bar .bar15-text{
+        width: auto;
+        height: 5vh;
+
+        color:var(--color3);
+
+        font-size: 1em;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .tokenomics .bar-container .bar15{
+        width: 17vw;
+        height: 5vh;
+
+        background-color: var(--color2);
+        border-color: var(--color1);
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px black;
+
+        
+        font-size: 1em;
+        font-weight: bold;
+        color: var(--color1);
+        text-align: left;
+    }
+
+    /* BAR 10 */
+    .tokenomics .bar-container .cont-bar .bar10-text{
+        width: auto;
+        height: 5vh;
+
+        color:var(--color3);
+
+        font-size: 1em;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .tokenomics .bar-container .bar10{
+        width: 12vw;
+        height: 5vh;
+
+        background-color: var(--color2);
+        border-color: var(--color1);
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px black;
+
+        
+        font-size: 1em;
+        font-weight: bold;
+        color: var(--color1);
+        text-align: left;
+    }
+
+    .tokenomics .bar-container .bar100 p
+    {
+        padding-top: 0px;
+        padding-left: 20px;
+    }
+
+    .tokenomics .bar-container .bar50 p, 
+    .tokenomics .bar-container .bar25 p, 
+    .tokenomics .bar-container .bar15 p, 
+    .tokenomics .bar-container .bar10 p,
+    .tokenomics .bar-container .cont-bar .bar50-text,
+    .tokenomics .bar-container .cont-bar .bar25-text,
+    .tokenomics .bar-container .cont-bar .bar15-text,
+    .tokenomics .bar-container .cont-bar .bar10-text
+    {
+        padding-top: 0px;
+        padding-left: 7px;
+    }
+
+
+    .tokenomics .bar-container .lp-container{
+        margin-top: 4.3vh;
+        align-items: center;
+        margin-left: 0vw;
+        width: auto;
+    }
+
+
+    .tokenomics .lp-container .lp {
+
+        display:inline-flex;
+        justify-content:space-evenly;
+        flex-wrap: wrap;
+
+        width: 25vw;
+        height: 15vh; 
+
+        background-color: none;
+        border-color: var(--color1);
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px black;
+
+        margin-top: 11vh;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        margin-bottom: 10vh;
+        
+        align-items: center;
+
+        font-size: 1.3em;
+        font-weight: bold;
+        color: var(--color2);
+        text-align: center;
+
+    }
+
+    .tokenomics .lp p{
+        margin-top: 0px;
+    }
+    /*--------------------------------------------------------------*/
+    /* Buy                                                          */
+    /*--------------------------------------------------------------*/
+    .buy{
+        background-color: var(--color1);
+        color: var(--color3);
+        display: block;
+        height: 100vh;
+    }
+
+    .buy h2{
+        font-size: var(--mediaH2);
+        color: var(--color2);
+        padding-left: 1.5%;
+        padding-bottom: 0.5%;
+    }
+
+
+    .buy .tools {
+        display: flex;
+        padding: 7vh 18%;
+        padding-bottom: 0vh;
+        padding-left: 24%;
+    }
+
+
+    .buy .tools .dexscreener {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .buy .tools .dexscreener img{
+        width: 20vh;
+        height: 20vh;
+        transition: transform 0.55s ease;
+    }
+    .buy .tools .dexscreener img:hover{
+        transform: translateY(-10px);
+        opacity: 0.75;
+    }
+
+    .buy .tools .dextools {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .buy .tools .dextools img{
+        width: 20vh;
+        height: 20vh;
+        transition: transform 0.55s ease;
+    }
+    .buy .tools .dextools img:hover{
+        transform: translateY(-10px);
+        opacity: 0.75;
+    }
+
+
+    .ca {
+        text-align: center;
+        position: relative;
+        margin-top: 13vh;
+        margin-bottom: 10vh;
+    }
+
+    .copy-box {
+        background-color: #1a505a;
+        border-radius: 70px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        padding: 4% 1%;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+    }
+
+    .copy-box:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .copy-box:active {
+        transform: scale(0.95);
+    }
+
+    .copy-box.dimmed {
+        opacity: 0;
+        transition: opacity 0.7s ease;
+    }
+
+    #text-to-copy {
+        font-size: 0.8em;
+        font-weight: bold;
+        color: var(--color2);
+        transition: color 0.6s ease;
+    }
+
+    .copy-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 20px 40px;
+        border-radius: 10px;
+        opacity: 0;
+        transition: opacity 0.7s ease;
+        pointer-events: none;
+    }
+
+    .copy-overlay.show {
+        opacity: 0.8;
+        transition: opacity 0.5s ease;
+    }
+
+
+
+
+    /*--------------------------------------------------------------*/
+    /* FOOTER                                                       */
+    /*--------------------------------------------------------------*/
+    footer {
+        text-align: center;
+        color: var(--color1);
+        padding: 20px 0;
+        font-size: 10px;
+        background-color: var(--color2);
+    }
+
+    footer hr {
+        width: 50%;
+        margin: 20px auto;
+        border: none;
+        border-top: 1px solid black;
+        font-weight: bold;
+    }
+
+}
+
