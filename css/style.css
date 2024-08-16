@@ -67,27 +67,35 @@ ul {
 
 /* HEADER */
 .main .header {
-    font-family: 'Mitr Regular';
+    font-family: 'Mitr Regular', 'Poppins';
     font-weight: 400;
     display: block;
     text-align: center;
     background-color: var(--color1);
 }
 
-.main .header h1{
-    color: var(--color2);
-    font-size: 20em;
-    line-height: 35vh;
+.main .header .landscape{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16vh;
+    
+    height: 30vh;
+    width: auto;
+ 
 }
 
-.main .header h3{
-    color: var(--color3);
-    font-size: 5em;
+.main .header .landscape .responsive{
+    width: 100%;
+    height: auto;
 }
 
 /* Socials */
 .main .header .socials {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .main .header .socials .socials-container{
@@ -113,13 +121,11 @@ ul {
 }
 
 .btn i {
-    margin-right: 10px;
     font-size: 2em;
 }
 
 .btn:hover {
     transform: translateY(-4px);
-    /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); */
 }
 
 /* Navbar */
@@ -667,28 +673,19 @@ footer hr {
 /*---------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 600px){
  
-    .header{
-        padding-top: 7vh;
-    }
-
-    .main .header h1{
-        color: var(--color2);
-        font-size: 6em;
-        line-height: 12vh;
-    }
-    
-    .main .header h3{
-        color: var(--color3);
-        font-size: 1.35em;
+    .main .header .landscape {
+        margin-top: 8vh;
     }
 
     /* Socials */
     .main .header .socials {
         display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .main .header .socials .socials-container{
-        padding-top: 30vh;
+        padding-top: 15vh;
         padding-bottom: 30vh;
         align-items: center;
     }
@@ -914,7 +911,7 @@ footer hr {
         float: left;
         justify-content:space-evenly;
         flex-wrap: wrap;
-        padding-top: 2.1vh;
+        padding-top: 1vh;
         padding-left: 2.3vh;
         display: block;
     }
@@ -1078,7 +1075,7 @@ footer hr {
 
 
     .tokenomics .bar-container .lp-container{
-        margin-top: 4.3vh;
+        margin-top: 3.8vh;
         align-items: center;
         margin-left: 0vw;
     }
@@ -1175,7 +1172,7 @@ footer hr {
     .ca {
         text-align: center;
         position: relative;
-        margin-top: 5.5vh;
+        margin-top: 3.5vh;
         margin-bottom: 10vh;
     }
 
@@ -1273,20 +1270,10 @@ footer hr {
 /*--------------------------------------------------------------*/
 @media screen and (max-width: 1700px) and (min-width: 600px){
  
-    .main .header{
-        padding-top: 4vh;
+    .main .header .landscape {
+        margin-top: 5vh;
     }
 
-    .main .header h1{
-        color: var(--color2);
-        font-size: 6em;
-        line-height: 28vh;
-    }
-    
-    .main .header h3{
-        color: var(--color3);
-        font-size: 1.35em;
-    }
 
     /* Socials */
     .main .header .socials {
@@ -1294,8 +1281,8 @@ footer hr {
     }
     
     .main .header .socials .socials-container{
-        padding-top: 20vh;
-        padding-bottom: 20vh;
+        padding-top: 33.5vh;
+        padding-bottom: 8vh;
         align-items: center;
     }
     
@@ -1401,15 +1388,15 @@ footer hr {
     /* Roadmap                                                      */
     /*--------------------------------------------------------------*/
     .roadmap{
-        background-color: var(--color2);
-        color: var(--color1);
+        background-color: var(--color1);
+        color: var(--color2);
         display: block;
         height: auto;
     }
     
     .roadmap h2{
         font-size: var(--mediaH2);
-        color: var(--color1);
+        color: var(--color2);
         padding-left: 1.5%;
         padding-bottom: 0.5%;
     }
@@ -1426,8 +1413,8 @@ footer hr {
     .card{
         width: 280px;
         height: 600px;
-        background-color: var(--color1);
-        color: var(--color3);
+        background-color: var(--color2);
+        color: var(--color1);
         border-radius: 20px;
         overflow: hidden;
         box-shadow: 0px 2px 4px black;
@@ -1483,7 +1470,7 @@ footer hr {
     }
 
     .cex { 
-        color: var(--color1);
+        color: var(--color3);
         font-size: 0.05;
         text-align: center;
     
