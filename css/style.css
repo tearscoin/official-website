@@ -78,7 +78,7 @@ ul {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 16vh;
+    margin-top: 4vh;
     
     height: 30vh;
     width: auto;
@@ -99,8 +99,8 @@ ul {
 }
 
 .main .header .socials .socials-container{
-    padding-top: 20vh;
-    padding-bottom: 21vh;
+    padding-top: 37vh;
+    padding-bottom: 15vh;
     align-items: center;
 }
 
