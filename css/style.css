@@ -85,7 +85,7 @@ ul {
     margin-right: auto;
     margin-top: 4vh;
     
-    height: 30vh;
+    height: 29vh;
     width: auto;
  
 }
@@ -101,11 +101,12 @@ ul {
     margin-left: auto;
     margin-right: auto;
 
+    padding-bottom: 17vh;
+    padding-top: 34vh;
+
 }
 
 .main .header .socials .socials-container{
-    padding-top: 37vh;
-    padding-bottom: 15vh;
     align-items: center;
 }
 
@@ -177,31 +178,34 @@ ul {
 }
 
 .about .container-para{
-    padding-top: 3%;
+    padding-top: 5%;
     color: var(--color3);
-    font-size: 1.8em;
     display: block;
     text-align:justify;
     max-width: 95vw;
+    padding-right: 0%;
 }
 
 .about .container-para .para{
     display: flex;
     padding: 0.5% 0.5%;
+    font-size: 2em;
+    
+   
 }
 
-.about .container-para .para-center{
-    display: flex;
-    padding-bottom: 0.5%;
-    justify-content: center;
-}
 
 .about .container-para .img-about{
     padding-top: 3%;
     width: 40%;
     height: auto;
     float: left;
+    padding-left: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
 }
+
 
 /*--------------------------------------------------------------*/
 /* Roadmap                                                      */
@@ -571,13 +575,15 @@ ul {
     padding-left: 20px;
 }
 
-.tokenomics .bar-container .lp-container{
-    margin-top: 3.5vh;
+.tokenomics .lp-container{
+    margin-top: 74vh;
     margin-bottom: 4.3vh;
-    display: flex;
+    display: block;
     justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
     
-    margin-left: 0vw;
+    margin-left: 8vw;
 }
 
 
@@ -828,8 +834,30 @@ footer hr {
 /*---------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 600px){
  
-    .main .header .landscape {
+
+    /* HEADER */
+    .main .header {
+        font-family: 'Mitr Regular', 'Poppins';
+        font-weight: 400;
+        display: block;
+        text-align: center;
+        background-color: var(--color1);
+    }
+
+    .main .header .landscape{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 8vh;
+        
+        height: 5vh;
+        width: auto;
+    
+    }
+
+    .main .header .landscape .responsive{
+        width: 100%;
+        height: auto;
     }
 
     /* Socials */
@@ -837,11 +865,11 @@ footer hr {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        padding-top: 38vh;
+        padding-bottom: 24vh;
     }
     
     .main .header .socials .socials-container{
-        padding-top: 15vh;
-        padding-bottom: 30vh;
         align-items: center;
     }
     
@@ -875,7 +903,7 @@ footer hr {
         background-color: var(--color2);
         display: flex;
         justify-content:space-evenly;
-        font-size: 0.95em;
+        font-size: 1.5em;
         text-align: center;
     }
     
@@ -886,7 +914,7 @@ footer hr {
     
     .main .header .navbar ul li a {
         color: var(--color1);
-        padding: 2px 0px;
+        padding: 2px 5px;
         display: block;
         font-weight: 600;
     }
@@ -923,28 +951,30 @@ footer hr {
 
     .about .container-para{
         color: var(--color3);
-        font-size: 100%;
         display: block;
         text-align:left;
         padding-right: 6%;
         font-size: auto;
+        padding-top: 2vh;
     }
 
     .about .container-para .para{
         display: block;
         padding-left: 7%;
         text-align: justify;
+        font-size: 1em;
     }
 
     .about .container-para .img-about{
-        width: 100%;
+        width: 80%;
         height: auto;
         float: left;
         padding-top: 0;
-        padding-left: 9%;
+        padding-left: 10%;
         padding-bottom: 5%;
+        margin-right: 10px;
+        margin-left: 30px;
     }
-
 
     /*--------------------------------------------------------------*/
     /* Roadmap                                                      */
@@ -1027,7 +1057,7 @@ footer hr {
     }
     
     .card-content h3{
-        font-size: 1.5em;
+        font-size: 1.15em;
         margin-bottom: 8px;
     }
 
@@ -1066,15 +1096,16 @@ footer hr {
         float: left;
         justify-content:space-evenly;
         flex-wrap: wrap;
-        padding-top: 1vh;
+        padding-top: 4vh;
         padding-left: 5vw;
+        padding-bottom: 3vh;
         display: block;
     }
 
 
     .tokenomics .bar-container .total{
         width: 90vw;
-        height: 5vh;
+        height: 5.5vh;
 
         background-color: var(--color2);
         border-color: var(--color1);
@@ -1094,7 +1125,7 @@ footer hr {
         display: flex;
         margin-top: 1.5vh;
         margin-bottom: 1.5vh;
-        height: 7vh;
+        height: 5.5vh;
     }
 
     /* 10% */
@@ -1114,7 +1145,8 @@ footer hr {
     }
 
     .tokenomics .bar-container .cont-bar .presale1-text{
-        width: 1530px;
+        width: auto;
+
 
         color:var(--color3);
 
@@ -1140,7 +1172,8 @@ footer hr {
     }
 
     .tokenomics .bar-container .cont-bar .presale2-text{
-        width: 1610px;
+        width: auto;
+
 
         color:var(--color3);
 
@@ -1164,7 +1197,7 @@ footer hr {
     }
 
     .tokenomics .bar-container .cont-bar .liquidity-text{
-        width: 1350px;
+        width: auto;
 
         color:var(--color3);
 
@@ -1190,7 +1223,8 @@ footer hr {
     }
 
     .tokenomics .bar-container .cont-bar .marketing-text{
-        width: 1450px;
+        width: auto;
+
 
         color:var(--color3);
 
@@ -1215,7 +1249,8 @@ footer hr {
     }
 
     .tokenomics .bar-container .cont-bar .team-text{
-        width: 1530px;
+        width: auto;
+
 
         color:var(--color3);
 
@@ -1241,7 +1276,8 @@ footer hr {
     }
 
     .tokenomics .bar-container .cont-bar .community-text{
-        width: 1450px;
+        width: auto;
+
 
         color:var(--color3);
 
@@ -1266,7 +1302,8 @@ footer hr {
     }
 
     .tokenomics .bar-container .cont-bar .reserve-text{
-        width: 1610px;
+        width: auto;
+
 
         color:var(--color3);
 
@@ -1278,7 +1315,7 @@ footer hr {
 
     .tokenomics .bar-container .total p
     {
-        padding-top: 10px;
+        padding-top: 12px;
         padding-left: 20px;
     }
 
@@ -1317,7 +1354,7 @@ footer hr {
     .tokenomics .bar-container .presale2 p,
     .tokenomics .bar-container .reserve p
     {
-        padding-top: 20px;
+        padding-top: 13.5px;
         padding-bottom: 10px;
         padding-left: 3px;
         font-size: 1em;
@@ -1331,39 +1368,52 @@ footer hr {
     .tokenomics .bar-container .cont-bar .reserve-text,
     .tokenomics .bar-container .cont-bar .community-text
     {
-        padding-top: 20px;
+        padding-top: 13.5px;
         padding-bottom: 10px;
         padding-left: 10px;
         font-size: 1em;
     }
 
 
-
-    .tokenomics .bar-container .lp-container {
+    .tokenomics .lp-container{
         margin-top: 3.5vh;
         margin-bottom: 4.3vh;
-        display: flex;
-        flex-direction: column; /* Disporre gli elementi in colonna */
-        gap: 10px; /* Spazio tra gli elementi, regola come preferisci */
-        margin-left: 0vw;
+
+        display:inline-flex;
+        justify-content:space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
     }
-    
+
+
     .tokenomics .lp {
-        width: 200px; /* Occupa tutta la larghezza del contenitore */
-        height: 37.5px;
+
+        width: 175px;
+        height: 75px;
+
         background-color: #0a2d33;
         border-color: var(--color1);
         border-radius: 10px;
         box-shadow: 0px 2px 4px black;
-        font-size: 0.8em;
+
+        
+        
+        font-size: 1.5em;
         font-weight: bold;
         color: var(--color2);
         text-align: center;
-        display: inline-flex;
+
+        display: flex;
+        justify-content: center; /* Centrato orizzontalmente */
+        align-items: center; /* Centrato verticalmente */
+
         margin-left: 0vw;
+        margin-right: 1vw;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
     }
-    
-    .tokenomics .lp p {
+
+    .tokenomics .lp p{
         margin-top: 0px;
     }
 
@@ -1438,7 +1488,7 @@ footer hr {
         background-color: #1a505a;
         border-radius: 70px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        padding: 10% 2%;
+        padding: 5% 20%;
         cursor: pointer;
         transition: all 0.3s ease;
         position: relative;
@@ -1464,7 +1514,7 @@ footer hr {
         font-weight: bold;
         color: var(--color2);
         transition: color 0.6s ease;
-        padding-left: 1%;
+        padding-left: 11%;
         padding-right: 1%;
     }
 
@@ -1489,6 +1539,60 @@ footer hr {
 
 
     /*--------------------------------------------------------------*/
+    /* Whitepaper                                                   */
+    /*--------------------------------------------------------------*/
+    .whitepaper{
+        background-color: var(--color1);
+        color: var(--color3);
+        display: block;
+        height: 100vh;
+    }
+
+    .whitepaper h2{
+        font-size: var(--mediaH2);
+        color: var(--color2);
+        padding-left: 3%;
+        padding-bottom: 0.5%;
+    }
+    
+    .whitepaper .container {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-bottom: 7vh;
+    }
+
+    .whitepaper h3{
+        color: var(--color2);
+    }
+
+    .whitepaper h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .whitepaper .container  h3 {
+        font-size: 1.5em;
+        margin-top: 5%;
+    }
+
+    .whitepaper .container p {
+        margin: 10px 0;
+    }
+
+    .whitepaper .container ul {
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+    .whitepaper .container ul li{
+        margin-top: 2vh;
+    }
+
+    .whitepaper .container .highlight {
+        
+        font-weight: bold;
+    }
+
+     /*--------------------------------------------------------------*/
     /* FOOTER                                                       */
     /*--------------------------------------------------------------*/
     footer {
@@ -1506,6 +1610,10 @@ footer hr {
         border-top: 1px solid black;
         font-weight: bold;
     }
+
+
+
+
 }
 
 
