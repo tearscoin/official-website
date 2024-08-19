@@ -60,6 +60,11 @@ ul {
     height: 100vh;
 }
 
+.whitepaper{
+    width: auto;
+    height: 100vh;
+}
+
 
 /*--------------------------------------------------------------*/
 /* MAIN                                                         */
@@ -174,7 +179,7 @@ ul {
 .about .container-para{
     padding-top: 3%;
     color: var(--color3);
-    font-size: 2em;
+    font-size: 1.8em;
     display: block;
     text-align:justify;
     max-width: 95vw;
@@ -183,6 +188,12 @@ ul {
 .about .container-para .para{
     display: flex;
     padding: 0.5% 0.5%;
+}
+
+.about .container-para .para-center{
+    display: flex;
+    padding-bottom: 0.5%;
+    justify-content: center;
 }
 
 .about .container-para .img-about{
@@ -211,7 +222,7 @@ ul {
 .roadmap .card-container{
     
     padding-top: 4vh;
-    padding-bottom: 4vh;
+    padding-bottom: 4.5vh;
     padding-left: 1.5%;
 
     display:inline-flex;
@@ -221,7 +232,7 @@ ul {
 }
 
 .card{
-    width: 280px;
+    width: 330px;
     height: 600px;
     background-color: var(--color2);
     color: var(--color1);
@@ -230,44 +241,45 @@ ul {
     box-shadow: 0px 2px 4px black;        
     margin-top: 2vh;
     margin-bottom: 2vh;
-    margin-left: 4.5vh;
-    margin-right: 4.5vh;
+    margin-left: 2.2vh;
+    margin-right: 1.5vh;
+    display: block;
 }
 
 
 .card .roadmap-img1{
-    width: 215px;
+    width: 250px;
     height: 200px;
-    padding-left: 55px;
+    padding-left: 20%;
     padding-top: 0px;
 }
 
 .card .roadmap-img2{
-    width: 215px;
+    width: 240px;
     height: 200px;
-    padding-left: 55px;
+    padding-left: 25%;
     padding-top: 15px;
 }
 
 .card .roadmap-img3{
-    width: 235px;
+    width: 260px;
     height: 195px;
-    padding-left: 45px;
+    padding-left: 18%;
     padding-top: 20px;
     margin-bottom: 4px;
 }
 
 .card .roadmap-img4{
-    width: 220px;
+    width: 250px;
     height: 200px;
-    padding-left: 50px;
+    padding-left: 20%;
     padding-top: 25px;
 }
 
 .card .roadmap-img5{
-    width: 250px;
+    width: 280px;
     height: 200px;
-    padding-left: 28px;
+    padding-left: 15%;
     padding-top: 25px;
 }
 
@@ -276,13 +288,13 @@ ul {
 }
 
 .card-content h3{
-    font-size: 1.5em;
+    font-size: 1.35em;
     margin-bottom: 8px;
 }
 
 .cex{
     padding-top: 4vh;
-    padding-bottom: 6vh;
+    padding-bottom: 6.5vh;
 
     color: var(--color3);
     font-size: 1.5em;;
@@ -311,12 +323,12 @@ ul {
     float: left;
     justify-content:space-evenly;
     flex-wrap: wrap;
-    padding-top: 5vh;
+    padding-top: 3vh;
     padding-left: 90px;
 }
 
-
-.tokenomics .bar-container .bar100{
+/* 100% */
+.tokenomics .bar-container .total{
     width: 1700px;
     height: 100PX;
 
@@ -336,53 +348,15 @@ ul {
 /* Single bar container layout */
 .tokenomics .bar-container .cont-bar{
     display: flex;
-    margin-top: 2vh;
+    margin-top: 1.5vh;
+    
+    height: 65px;
 }
 
 
-/* BAR 50 */
-.tokenomics .bar-container .cont-bar .bar50-text{
-    width: 850px;
-    height: 100PX;
-
-    color:var(--color3);
-
-    font-size: 1.15em;
-    font-weight: bold;
-    text-align: left;
-}
-
-.tokenomics .bar-container .cont-bar .bar50{
-    width: 850px;
-    height: 100PX;
-
-    background-color: var(--color2);
-    border-color: var(--color1);
-    border-radius: 10px;
-    box-shadow: 0px 2px 4px black;
-
-    font-size: 1.15em;
-    font-weight: bold;
-    color: var(--color1);
-    text-align: left;
-}
-
-
-/* BAR 25 */
-.tokenomics .bar-container .cont-bar .bar25-text{
-    width: 850px;
-    height: 100PX;
-
-    color:var(--color3);
-
-    font-size: 1.15em;
-    font-weight: bold;
-    text-align: left;
-}
-
-.tokenomics .bar-container .bar25{
-    width: 525PX;
-    height: 100PX;
+/* 10% */
+.tokenomics .bar-container .cont-bar .presale1{
+    width: 170px;
 
     background-color: var(--color2);
     border-color: var(--color1);
@@ -396,21 +370,19 @@ ul {
     text-align: left;
 }
 
-/* BAR 15 */
-.tokenomics .bar-container .cont-bar .bar15-text{
-    width: 850px;
-    height: 100PX;
+.tokenomics .bar-container .cont-bar .presale1-text{
+    width: 1530px;
 
     color:var(--color3);
 
     font-size: 1.15em;
-    font-weight: bold;
     text-align: left;
 }
 
-.tokenomics .bar-container .bar15{
-    width: 310PX;
-    height: 100PX;
+
+/* 5% */
+.tokenomics .bar-container .cont-bar .presale2{
+    width: 90px;
 
     background-color: var(--color2);
     border-color: var(--color1);
@@ -424,21 +396,43 @@ ul {
     text-align: left;
 }
 
-/* BAR 10 */
-.tokenomics .bar-container .cont-bar .bar10-text{
-    width: 850px;
-    height: 100PX;
+.tokenomics .bar-container .cont-bar .presale2-text{
+    width: 1610px;
 
     color:var(--color3);
 
     font-size: 1.15em;
-    font-weight: bold;
     text-align: left;
 }
 
-.tokenomics .bar-container .bar10{
-    width: 170PX;
-    height: 100PX;
+/* 20% */
+.tokenomics .bar-container .cont-bar .liquidity{
+    width: 350px;
+
+    background-color: var(--color2);
+    border-color: var(--color1);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px black;
+
+    font-size: 1.15em;
+    font-weight: bold;
+    color: var(--color1);
+    text-align: left;
+}
+
+.tokenomics .bar-container .cont-bar .liquidity-text{
+    width: 1350px;
+
+    color:var(--color3);
+
+    font-size: 1.15em;
+    text-align: left;
+}
+
+
+/* 15% */
+.tokenomics .bar-container .marketing{
+    width: 250PX;
 
     background-color: var(--color2);
     border-color: var(--color1);
@@ -452,29 +446,137 @@ ul {
     text-align: left;
 }
 
-.tokenomics .bar-container .bar100 p
+.tokenomics .bar-container .cont-bar .marketing-text{
+    width: 1450px;
+
+    color:var(--color3);
+
+    font-size: 1.15em;
+    text-align: left;
+}
+
+/* 10% */
+.tokenomics .bar-container .team{
+    width: 170px;
+
+    background-color: var(--color2);
+    border-color: var(--color1);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px black;
+
+    
+    font-size: 1.15em;
+    font-weight: bold;
+    color: var(--color1);
+    text-align: left;
+}
+
+.tokenomics .bar-container .cont-bar .team-text{
+    width: 1530px;
+
+    color:var(--color3);
+
+    font-size: 1.15em;
+    text-align: left;
+}
+
+
+/* 15% */
+.tokenomics .bar-container .community{
+    width: 250PX;
+
+    background-color: var(--color2);
+    border-color: var(--color1);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px black;
+
+    
+    font-size: 1.15em;
+    font-weight: bold;
+    color: var(--color1);
+    text-align: left;
+}
+
+.tokenomics .bar-container .cont-bar .community-text{
+    width: 1450px;
+
+    color:var(--color3);
+
+    font-size: 1.15em;
+    text-align: left;
+}
+
+/* 5% */
+.tokenomics .bar-container .reserve{
+    width: 90px;
+
+    background-color: var(--color2);
+    border-color: var(--color1);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px black;
+
+    
+    font-size: 1.15em;
+    font-weight: bold;
+    color: var(--color1);
+    text-align: left;
+}
+
+.tokenomics .bar-container .cont-bar .reserve-text{
+    width: 1610px;
+
+    color:var(--color3);
+
+    font-size: 1.15em;
+    text-align: left;
+}
+
+
+
+.tokenomics .bar-container .total p
 {
     padding-top: 29px;
     padding-left: 20px;
 }
 
-.tokenomics .bar-container .bar50 p, 
-.tokenomics .bar-container .bar25 p, 
-.tokenomics .bar-container .bar15 p, 
-.tokenomics .bar-container .bar10 p,
-.tokenomics .bar-container .cont-bar .bar50-text,
-.tokenomics .bar-container .cont-bar .bar25-text,
-.tokenomics .bar-container .cont-bar .bar15-text,
-.tokenomics .bar-container .cont-bar .bar10-text
+.tokenomics .bar-container .cont-bar .liquidity-text .bold,
+.tokenomics .bar-container .cont-bar .marketing-text .bold,
+.tokenomics .bar-container .cont-bar .team-text .bold,
+.tokenomics .bar-container .cont-bar .presale1-text .bold,
+.tokenomics .bar-container .cont-bar .presale2-text .bold,
+.tokenomics .bar-container .cont-bar .reserve-text .bold,
+.tokenomics .bar-container .cont-bar .community-text .bold
 {
-    padding-top: 36px;
+    font-weight: bold;
+    color: var(--color2);
+}
+
+.tokenomics .bar-container .liquidity p, 
+.tokenomics .bar-container .marketing p, 
+.tokenomics .bar-container .team p, 
+.tokenomics .bar-container .community p,
+.tokenomics .bar-container .presale1 p,
+.tokenomics .bar-container .presale2 p,
+.tokenomics .bar-container .reserve p,
+.tokenomics .bar-container .cont-bar .liquidity-text,
+.tokenomics .bar-container .cont-bar .marketing-text,
+.tokenomics .bar-container .cont-bar .team-text,
+.tokenomics .bar-container .cont-bar .presale1-text,
+.tokenomics .bar-container .cont-bar .presale2-text,
+.tokenomics .bar-container .cont-bar .reserve-text,
+.tokenomics .bar-container .cont-bar .community-text
+{
+    display: flex;
+    padding-top: 20px;
     padding-left: 20px;
 }
 
 .tokenomics .bar-container .lp-container{
-    margin-top: 4.7vh;
+    margin-top: 3.5vh;
     margin-bottom: 4.3vh;
-    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    
     margin-left: 0vw;
 }
 
@@ -484,7 +586,7 @@ ul {
     justify-content:space-evenly;
     flex-wrap: wrap;
 
-    width: 500px;
+    width: 400px;
     height: 150px;
 
     background-color: #0a2d33;
@@ -500,7 +602,7 @@ ul {
     text-align: center;
 
     display:inline-flex;
-    margin-left: 2vw;
+    margin-left: 0vw;
 }
 
 .tokenomics .lp p{
@@ -577,6 +679,9 @@ ul {
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
+    
+    font-size: 2em;
+    font-weight: bold;
 }
 
 .copy-box:hover {
@@ -594,8 +699,7 @@ ul {
 }
 
 #text-to-copy {
-    font-size: 2em;
-    font-weight: bold;
+    font-weight: normal;
     color: var(--color2);
     transition: color 0.6s ease;
 }
@@ -620,7 +724,58 @@ ul {
 }
 
 
+/*--------------------------------------------------------------*/
+/* Whitepaper                                                   */
+/*--------------------------------------------------------------*/
+.whitepaper{
+    background-color: var(--color1);
+    color: var(--color3);
+    display: block;
+    height: auto;
+}
 
+.whitepaper h2{
+    font-size: 3.5em;
+    color: var(--color2);
+    padding-left: 20px;
+}
+
+.whitepaper .container {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 7vh;
+}
+
+.whitepaper h3{
+    color: var(--color2);
+}
+
+.whitepaper h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.whitepaper .container  h3 {
+    font-size: 1.8em;
+    margin-top: 2%;
+}
+
+.whitepaper .container p {
+    margin: 10px 0;
+}
+
+.whitepaper .container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+.whitepaper .container ul li{
+    margin-top: 0.5vh;
+}
+
+.whitepaper .container .highlight {
+    
+    font-weight: bold;
+}
 
 
 /*--------------------------------------------------------------*/
@@ -720,7 +875,7 @@ footer hr {
         background-color: var(--color2);
         display: flex;
         justify-content:space-evenly;
-        font-size: 1.05em;
+        font-size: 0.95em;
         text-align: center;
     }
     
@@ -731,7 +886,7 @@ footer hr {
     
     .main .header .navbar ul li a {
         color: var(--color1);
-        padding: 2px 10px;
+        padding: 2px 0px;
         display: block;
         font-weight: 600;
     }
@@ -912,12 +1067,12 @@ footer hr {
         justify-content:space-evenly;
         flex-wrap: wrap;
         padding-top: 1vh;
-        padding-left: 2.3vh;
+        padding-left: 5vw;
         display: block;
     }
 
 
-    .tokenomics .bar-container .bar100{
+    .tokenomics .bar-container .total{
         width: 90vw;
         height: 5vh;
 
@@ -937,54 +1092,14 @@ footer hr {
     /* Single bar container layout */
     .tokenomics .bar-container .cont-bar{
         display: flex;
-        margin-top: 2vh;
+        margin-top: 1.5vh;
+        margin-bottom: 1.5vh;
+        height: 7vh;
     }
 
-
-    /* BAR 50 */
-    .tokenomics .bar-container .cont-bar .bar50-text{
-        width: auto;
-        height: 5vh;
-
-        color:var(--color3);
-
-        font-size: 1.2em;
-        font-weight: bold;
-        text-align: left;
-    }
-
-    .tokenomics .bar-container .cont-bar .bar50{
-        width: 45vw;
-        height: 5vh;
-
-        background-color: var(--color2);
-        border-color: var(--color1);
-        border-radius: 10px;
-        box-shadow: 0px 2px 4px black;
-
-        
-        font-size: 1.2em;
-        font-weight: bold;
-        color: var(--color1);
-        text-align: left;
-    }
-
-
-    /* BAR 25 */
-    .tokenomics .bar-container .cont-bar .bar25-text{
-        width: auto;
-        height: 5vh;
-
-        color:var(--color3);
-
-        font-size: 1.2em;
-        font-weight: bold;
-        text-align: left;
-    }
-
-    .tokenomics .bar-container .bar25{
-        width: 28vw;
-        height: 5vh;
+    /* 10% */
+    .tokenomics .bar-container .cont-bar .presale1{
+        width: 20vw;
 
         background-color: var(--color2);
         border-color: var(--color1);
@@ -998,21 +1113,19 @@ footer hr {
         text-align: left;
     }
 
-    /* BAR 15 */
-    .tokenomics .bar-container .cont-bar .bar15-text{
-        width: auto;
-        height: 5vh;
+    .tokenomics .bar-container .cont-bar .presale1-text{
+        width: 1530px;
 
         color:var(--color3);
 
-        font-size: 1.2em;
-        font-weight: bold;
+        font-size: 1em;
         text-align: left;
     }
 
-    .tokenomics .bar-container .bar15{
-        width: 17vw;
-        height: 5vh;
+
+    /* 5% */
+    .tokenomics .bar-container .cont-bar .presale2{
+        width: 16vw;
 
         background-color: var(--color2);
         border-color: var(--color1);
@@ -1026,21 +1139,43 @@ footer hr {
         text-align: left;
     }
 
-    /* BAR 10 */
-    .tokenomics .bar-container .cont-bar .bar10-text{
-        width: auto;
-        height: 5vh;
+    .tokenomics .bar-container .cont-bar .presale2-text{
+        width: 1610px;
 
         color:var(--color3);
 
-        font-size: 1.2em;
-        font-weight: bold;
+        font-size: 1.15em;
         text-align: left;
     }
 
-    .tokenomics .bar-container .bar10{
-        width: 12vw;
-        height: 5vh;
+    /* 20% */
+    .tokenomics .bar-container .cont-bar .liquidity{
+        width: 40vw;
+
+        background-color: var(--color2);
+        border-color: var(--color1);
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px black;
+
+        font-size: 1.15em;
+        font-weight: bold;
+        color: var(--color1);
+        text-align: left;
+    }
+
+    .tokenomics .bar-container .cont-bar .liquidity-text{
+        width: 1350px;
+
+        color:var(--color3);
+
+        font-size: 1.15em;
+        text-align: left;
+    }
+
+
+    /* 15% */
+    .tokenomics .bar-container .marketing{
+        width: 30vw;
 
         background-color: var(--color2);
         border-color: var(--color1);
@@ -1054,59 +1189,182 @@ footer hr {
         text-align: left;
     }
 
-    .tokenomics .bar-container .bar100 p
+    .tokenomics .bar-container .cont-bar .marketing-text{
+        width: 1450px;
+
+        color:var(--color3);
+
+        font-size: 1.15em;
+        text-align: left;
+    }
+
+    /* 10% */
+    .tokenomics .bar-container .team{
+        width: 24vw;
+
+        background-color: var(--color2);
+        border-color: var(--color1);
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px black;
+
+        
+        font-size: 1.15em;
+        font-weight: bold;
+        color: var(--color1);
+        text-align: left;
+    }
+
+    .tokenomics .bar-container .cont-bar .team-text{
+        width: 1530px;
+
+        color:var(--color3);
+
+        font-size: 1.15em;
+        text-align: left;
+    }
+
+
+    /* 15% */
+    .tokenomics .bar-container .community{
+        width: 30vw;
+
+        background-color: var(--color2);
+        border-color: var(--color1);
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px black;
+
+        
+        font-size: 1.15em;
+        font-weight: bold;
+        color: var(--color1);
+        text-align: left;
+    }
+
+    .tokenomics .bar-container .cont-bar .community-text{
+        width: 1450px;
+
+        color:var(--color3);
+
+        font-size: 1.15em;
+        text-align: left;
+    }
+
+    /* 5% */
+    .tokenomics .bar-container .reserve{
+        width: 16vw;
+
+        background-color: var(--color2);
+        border-color: var(--color1);
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px black;
+
+        
+        font-size: 1.15em;
+        font-weight: bold;
+        color: var(--color1);
+        text-align: left;
+    }
+
+    .tokenomics .bar-container .cont-bar .reserve-text{
+        width: 1610px;
+
+        color:var(--color3);
+
+        font-size: 1.15em;
+        text-align: left;
+    }
+
+
+
+    .tokenomics .bar-container .total p
     {
         padding-top: 10px;
         padding-left: 20px;
     }
 
-    .tokenomics .bar-container .bar50 p, 
-    .tokenomics .bar-container .bar25 p, 
-    .tokenomics .bar-container .bar15 p, 
-    .tokenomics .bar-container .bar10 p,
-    .tokenomics .bar-container .cont-bar .bar50-text,
-    .tokenomics .bar-container .cont-bar .bar25-text,
-    .tokenomics .bar-container .cont-bar .bar15-text,
-    .tokenomics .bar-container .cont-bar .bar10-text
+    .tokenomics .bar-container .cont-bar .liquidity-text .bold,
+    .tokenomics .bar-container .cont-bar .marketing-text .bold,
+    .tokenomics .bar-container .cont-bar .team-text .bold,
+    .tokenomics .bar-container .cont-bar .presale1-text .bold,
+    .tokenomics .bar-container .cont-bar .presale2-text .bold,
+    .tokenomics .bar-container .cont-bar .reserve-text .bold,
+    .tokenomics .bar-container .cont-bar .community-text .bold
     {
-        padding-top: 10px;
-        padding-left: 7px;
+        font-weight: bold;
+        color: var(--color3);
+        font-size: 1em;
+    }
+
+    .tokenomics .bar-container .cont-bar .liquidity-text .expl,
+    .tokenomics .bar-container .cont-bar .marketing-text .expl,
+    .tokenomics .bar-container .cont-bar .team-text .expl,
+    .tokenomics .bar-container .cont-bar .presale1-text .expl,
+    .tokenomics .bar-container .cont-bar .presale2-text .expl,
+    .tokenomics .bar-container .cont-bar .reserve-text .expl,
+    .tokenomics .bar-container .cont-bar .community-text .expl
+    {
+        display: none;
+        font-weight: bold;
+        color: var(--color2);
+        font-size: 1em;
+    }
+
+    .tokenomics .bar-container .liquidity p, 
+    .tokenomics .bar-container .marketing p, 
+    .tokenomics .bar-container .team p, 
+    .tokenomics .bar-container .community p,
+    .tokenomics .bar-container .presale1 p,
+    .tokenomics .bar-container .presale2 p,
+    .tokenomics .bar-container .reserve p
+    {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-left: 3px;
+        font-size: 1em;
+    }
+
+    .tokenomics .bar-container .cont-bar .liquidity-text,
+    .tokenomics .bar-container .cont-bar .marketing-text,
+    .tokenomics .bar-container .cont-bar .team-text,
+    .tokenomics .bar-container .cont-bar .presale1-text,
+    .tokenomics .bar-container .cont-bar .presale2-text,
+    .tokenomics .bar-container .cont-bar .reserve-text,
+    .tokenomics .bar-container .cont-bar .community-text
+    {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        font-size: 1em;
     }
 
 
-    .tokenomics .bar-container .lp-container{
-        margin-top: 3.8vh;
-        align-items: center;
+
+    .tokenomics .bar-container .lp-container {
+        margin-top: 3.5vh;
+        margin-bottom: 4.3vh;
+        display: flex;
+        flex-direction: column; /* Disporre gli elementi in colonna */
+        gap: 10px; /* Spazio tra gli elementi, regola come preferisci */
         margin-left: 0vw;
     }
-
-
-    .tokenomics .bar-container .lp-container .lp {
-
-        display:inline-flex;
-        justify-content:space-evenly;
-        flex-wrap: wrap;
-
-        width: 90vw;
-        height: 15vh;
-
-        background-color: none;
+    
+    .tokenomics .lp {
+        width: 200px; /* Occupa tutta la larghezza del contenitore */
+        height: 37.5px;
+        background-color: #0a2d33;
         border-color: var(--color1);
         border-radius: 10px;
         box-shadow: 0px 2px 4px black;
-
-        margin-left: 0;
-        margin-bottom: 1.5vh;
-        
-        font-size: 2em;
+        font-size: 0.8em;
         font-weight: bold;
         color: var(--color2);
         text-align: center;
-
+        display: inline-flex;
+        margin-left: 0vw;
     }
-
-    .tokenomics .lp p{
-        margin-top: 43px;
+    
+    .tokenomics .lp p {
+        margin-top: 0px;
     }
 
 
@@ -1516,7 +1774,7 @@ footer hr {
     }
 
 
-    .tokenomics .bar-container .bar100{
+    .tokenomics .bar-container .community0{
         width: 90vw;
         height: 5vh;
 
@@ -1541,7 +1799,7 @@ footer hr {
 
 
     /* BAR 50 */
-    .tokenomics .bar-container .cont-bar .bar50-text{
+    .tokenomics .bar-container .cont-bar .liquidity-text{
         width: auto;
         height: 5vh;
 
@@ -1552,7 +1810,7 @@ footer hr {
         text-align: left;
     }
 
-    .tokenomics .bar-container .cont-bar .bar50{
+    .tokenomics .bar-container .cont-bar .liquidity{
         width: 45vw;
         height: 5vh;
 
@@ -1570,7 +1828,7 @@ footer hr {
 
 
     /* BAR 25 */
-    .tokenomics .bar-container .cont-bar .bar25-text{
+    .tokenomics .bar-container .cont-bar .marketing-text{
         width: auto;
         height: 5vh;
 
@@ -1581,7 +1839,7 @@ footer hr {
         text-align: left;
     }
 
-    .tokenomics .bar-container .bar25{
+    .tokenomics .bar-container .marketing{
         width: 28vw;
         height: 5vh;
 
@@ -1598,7 +1856,7 @@ footer hr {
     }
 
     /* BAR 15 */
-    .tokenomics .bar-container .cont-bar .bar15-text{
+    .tokenomics .bar-container .cont-bar .team-text{
         width: auto;
         height: 5vh;
 
@@ -1609,7 +1867,7 @@ footer hr {
         text-align: left;
     }
 
-    .tokenomics .bar-container .bar15{
+    .tokenomics .bar-container .team{
         width: 17vw;
         height: 5vh;
 
@@ -1626,7 +1884,7 @@ footer hr {
     }
 
     /* BAR 10 */
-    .tokenomics .bar-container .cont-bar .bar10-text{
+    .tokenomics .bar-container .cont-bar .community-text{
         width: auto;
         height: 5vh;
 
@@ -1637,7 +1895,7 @@ footer hr {
         text-align: left;
     }
 
-    .tokenomics .bar-container .bar10{
+    .tokenomics .bar-container .community{
         width: 12vw;
         height: 5vh;
 
@@ -1653,20 +1911,20 @@ footer hr {
         text-align: left;
     }
 
-    .tokenomics .bar-container .bar100 p
+    .tokenomics .bar-container .community0 p
     {
         padding-top: 0px;
         padding-left: 20px;
     }
 
-    .tokenomics .bar-container .bar50 p, 
-    .tokenomics .bar-container .bar25 p, 
-    .tokenomics .bar-container .bar15 p, 
-    .tokenomics .bar-container .bar10 p,
-    .tokenomics .bar-container .cont-bar .bar50-text,
-    .tokenomics .bar-container .cont-bar .bar25-text,
-    .tokenomics .bar-container .cont-bar .bar15-text,
-    .tokenomics .bar-container .cont-bar .bar10-text
+    .tokenomics .bar-container .liquidity p, 
+    .tokenomics .bar-container .marketing p, 
+    .tokenomics .bar-container .team p, 
+    .tokenomics .bar-container .community p,
+    .tokenomics .bar-container .cont-bar .liquidity-text,
+    .tokenomics .bar-container .cont-bar .marketing-text,
+    .tokenomics .bar-container .cont-bar .team-text,
+    .tokenomics .bar-container .cont-bar .community-text
     {
         padding-top: 0px;
         padding-left: 7px;
