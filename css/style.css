@@ -348,8 +348,9 @@ ul {
 
     background-color: var(--color2);
     border-color: var(--color1);
-    border-radius: 10px;
-    box-shadow: 0px 2px 4px black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 7px;
 
     
     font-size: 2em;
@@ -372,20 +373,21 @@ ul {
 .tokenomics .bar-container .cont-bar .presale1{
     width: 9.5vw;
 
-    background-color: var(--color2);
-    border-color: var(--color1);
-    border-radius: 10px;
-    box-shadow: 0px 2px 4px black;
+    background-color: var(--color1);
+    border-color: var(--color2);
+    border-width: 1.5px;
+    border-style: solid;
+    border-radius: 7px;
 
     
     font-size: 1.15em;
     font-weight: bold;
-    color: var(--color1);
+    color: var(--color2);
     text-align: left;
 }
 
 .tokenomics .bar-container .cont-bar .presale1-text{
-    width: 80vw;
+    width: auto;
 
     color:var(--color3);
 
@@ -398,20 +400,21 @@ ul {
 .tokenomics .bar-container .cont-bar .presale2{
     width: 5vw;
 
-    background-color: var(--color2);
-    border-color: var(--color1);
-    border-radius: 10px;
-    box-shadow: 0px 2px 4px black;
+    background-color: var(--color1);
+    border-color: var(--color2);
+    border-width: 1.5px;
+    border-style: solid;
+    border-radius: 7px;
 
     
     font-size: 1.15em;
     font-weight: bold;
-    color: var(--color1);
+    color: var(--color2);
     text-align: left;
 }
 
 .tokenomics .bar-container .cont-bar .presale2-text{
-    width: 90vw;
+    width: auto;
 
     color:var(--color3);
 
@@ -419,49 +422,52 @@ ul {
     text-align: left;
 }
 
-/* 20% */
+/* 25% */
 .tokenomics .bar-container .cont-bar .liquidity{
-    width: 20vw;
+    width: 25vw;
 
-    background-color: var(--color2);
-    border-color: var(--color1);
-    border-radius: 10px;
-    box-shadow: 0px 2px 4px black;
-
-    font-size: 1.15em;
-    font-weight: bold;
-    color: var(--color1);
-    text-align: left;
-}
-
-.tokenomics .bar-container .cont-bar .liquidity-text{
-    width: 75vw;
-
-    color:var(--color3);
-
-    font-size: 1.15em;
-    text-align: left;
-}
-
-
-/* 15% */
-.tokenomics .bar-container .marketing{
-    width: 15vw;
-
-    background-color: var(--color2);
-    border-color: var(--color1);
-    border-radius: 10px;
-    box-shadow: 0px 2px 4px black;
+    background-color: var(--color1);
+    border-color: var(--color2);
+    border-width: 1.5px;
+    border-style: solid;
+    border-radius: 7px;
 
     
     font-size: 1.15em;
     font-weight: bold;
-    color: var(--color1);
+    color: var(--color2);
+    text-align: left;
+}
+
+.tokenomics .bar-container .cont-bar .liquidity-text{
+    width: auto;
+
+    color:var(--color3);
+
+    font-size: 1.15em;
+    text-align: left;
+}
+
+
+/* 20% */
+.tokenomics .bar-container .marketing{
+    width: 20vw;
+
+    background-color: var(--color1);
+    border-color: var(--color2);
+    border-width: 1.5px;
+    border-style: solid;
+    border-radius: 7px;
+
+    
+    font-size: 1.15em;
+    font-weight: bold;
+    color: var(--color2);
     text-align: left;
 }
 
 .tokenomics .bar-container .cont-bar .marketing-text{
-    width: 75vw;
+    width: auto;
 
     color:var(--color3);
 
@@ -473,20 +479,21 @@ ul {
 .tokenomics .bar-container .team{
     width: 9.5vw;
 
-    background-color: var(--color2);
-    border-color: var(--color1);
-    border-radius: 10px;
-    box-shadow: 0px 2px 4px black;
+    background-color: var(--color1);
+    border-color: var(--color2);
+    border-width: 1.5px;
+    border-style: solid;
+    border-radius: 7px;
 
     
     font-size: 1.15em;
     font-weight: bold;
-    color: var(--color1);
+    color: var(--color2);
     text-align: left;
 }
 
 .tokenomics .bar-container .cont-bar .team-text{
-    width: 80vw;
+    width: auto;
 
     color:var(--color3);
 
@@ -499,20 +506,21 @@ ul {
 .tokenomics .bar-container .community{
     width: 15vw;
 
-    background-color: var(--color2);
-    border-color: var(--color1);
-    border-radius: 10px;
-    box-shadow: 0px 2px 4px black;
+    background-color: var(--color1);
+    border-color: var(--color2);
+    border-width: 1.5px;
+    border-style: solid;
+    border-radius: 7px;
 
     
     font-size: 1.15em;
     font-weight: bold;
-    color: var(--color1);
+    color: var(--color2);
     text-align: left;
 }
 
 .tokenomics .bar-container .cont-bar .community-text{
-    width: 75vw;
+    width: auto;
 
     color:var(--color3);
 
@@ -524,20 +532,21 @@ ul {
 .tokenomics .bar-container .reserve{
     width: 5vw;
 
-    background-color: var(--color2);
-    border-color: var(--color1);
-    border-radius: 10px;
-    box-shadow: 0px 2px 4px black;
+    background-color: var(--color1);
+    border-color: var(--color2);
+    border-width: 1.5px;
+    border-style: solid;
+    border-radius: 7px;
 
     
     font-size: 1.15em;
     font-weight: bold;
-    color: var(--color1);
+    color: var(--color2);
     text-align: left;
 }
 
 .tokenomics .bar-container .cont-bar .reserve-text{
-    width: 1610px;
+    width: auto;
 
     color:var(--color3);
 
@@ -550,7 +559,7 @@ ul {
 .tokenomics .bar-container .total p
 {
     padding-top: 29px;
-    padding-left: 20px;
+    /* padding-left: 0px; */
 }
 
 .tokenomics .bar-container .cont-bar .liquidity-text .bold,
@@ -582,7 +591,7 @@ ul {
 {
     display: flex;
     padding-top: 20px;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .tokenomics .lp-container{
@@ -603,13 +612,16 @@ ul {
     height: 150px;
 
     background-color: #0a2d33;
-    border-color: var(--color1);
+    background-color: var(--color1);
+    border-color:  #0a2d33;
+    border-width: 1px;
+    border-style: solid;
     border-radius: 10px;
-    box-shadow: 0px 2px 4px black;
+    box-shadow: 0px 1px 2px black;
 
     
     
-    font-size: 3em;
+    font-size: 2.9em;
     font-weight: bold;
     color: var(--color2);
     text-align: center;
@@ -620,7 +632,7 @@ ul {
 }
 
 .tokenomics .lp p{
-    margin-top: 35px;
+    margin-top: 40px;
 }
 
 
@@ -1017,10 +1029,10 @@ footer hr {
         color: var(--color3);
     
         border-radius: 20px;
-        border: 2px var(--color2);
+        border: 1.5px var(--color2);
         border-style:solid;
         overflow: hidden;
-        box-shadow: 0px 2px 4px black;        
+        box-shadow: 0px 1px 2px black;        
         margin-top: 2vh;
         margin-bottom: 2.2vh;
         margin-left: 2vh;
@@ -1123,19 +1135,20 @@ footer hr {
         flex-wrap: wrap;
         padding-top: 4vh;
         padding-left: 5vw;
-        padding-bottom: 3vh;
+        padding-bottom: 2vh;
         display: block;
     }
 
 
     .tokenomics .bar-container .total{
         width: 90vw;
-        height: 5.5vh;
+        height: 6vh;
 
         background-color: var(--color2);
         border-color: var(--color1);
-        border-radius: 10px;
-        box-shadow: 0px 2px 4px black;
+        border-width: 1.5px;
+        border-style: solid;
+        border-radius: 7px;
 
         
         font-size: 1.2em;
@@ -1155,17 +1168,19 @@ footer hr {
 
     /* 10% */
     .tokenomics .bar-container .cont-bar .presale1{
-        width: 20vw;
+        width: 24vw;
 
-        background-color: var(--color2);
-        border-color: var(--color1);
-        border-radius: 10px;
-        box-shadow: 0px 2px 4px black;
+        background-color: var(--color1);
+        border-color: var(--color2);
+        border-width: 1.5px;
+        border-style: solid;
+        border-radius: 7px;
+
 
         
         font-size: 1.15em;
         font-weight: bold;
-        color: var(--color1);
+        color: var(--color2);
         text-align: left;
     }
 
@@ -1182,17 +1197,19 @@ footer hr {
 
     /* 5% */
     .tokenomics .bar-container .cont-bar .presale2{
-        width: 16vw;
+        width: 12vw;
 
-        background-color: var(--color2);
-        border-color: var(--color1);
-        border-radius: 10px;
-        box-shadow: 0px 2px 4px black;
+        background-color: var(--color1);
+        border-color: var(--color2);
+        border-width: 1.5px;
+        border-style: solid;
+        border-radius: 7px;
+
 
         
         font-size: 1.15em;
         font-weight: bold;
-        color: var(--color1);
+        color: var(--color2);
         text-align: left;
     }
 
@@ -1206,18 +1223,21 @@ footer hr {
         text-align: left;
     }
 
-    /* 20% */
+    /* 25% */
     .tokenomics .bar-container .cont-bar .liquidity{
         width: 40vw;
 
-        background-color: var(--color2);
-        border-color: var(--color1);
-        border-radius: 10px;
-        box-shadow: 0px 2px 4px black;
+        background-color: var(--color1);
+        border-color: var(--color2);
+        border-width: 1.5px;
+        border-style: solid;
+        border-radius: 7px;
 
+
+        
         font-size: 1.15em;
         font-weight: bold;
-        color: var(--color1);
+        color: var(--color2);
         text-align: left;
     }
 
@@ -1231,19 +1251,21 @@ footer hr {
     }
 
 
-    /* 15% */
+    /* 20% */
     .tokenomics .bar-container .marketing{
-        width: 30vw;
+        width: 35vw;
 
-        background-color: var(--color2);
-        border-color: var(--color1);
-        border-radius: 10px;
-        box-shadow: 0px 2px 4px black;
+        background-color: var(--color1);
+        border-color: var(--color2);
+        border-width: 1.5px;
+        border-style: solid;
+        border-radius: 7px;
+
 
         
         font-size: 1.15em;
         font-weight: bold;
-        color: var(--color1);
+        color: var(--color2);
         text-align: left;
     }
 
@@ -1261,15 +1283,17 @@ footer hr {
     .tokenomics .bar-container .team{
         width: 24vw;
 
-        background-color: var(--color2);
-        border-color: var(--color1);
-        border-radius: 10px;
-        box-shadow: 0px 2px 4px black;
+        background-color: var(--color1);
+        border-color: var(--color2);
+        border-width: 1.5px;
+        border-style: solid;
+        border-radius: 7px;
+
 
         
         font-size: 1.15em;
         font-weight: bold;
-        color: var(--color1);
+        color: var(--color2);
         text-align: left;
     }
 
@@ -1288,15 +1312,17 @@ footer hr {
     .tokenomics .bar-container .community{
         width: 30vw;
 
-        background-color: var(--color2);
-        border-color: var(--color1);
-        border-radius: 10px;
-        box-shadow: 0px 2px 4px black;
+        background-color: var(--color1);
+        border-color: var(--color2);
+        border-width: 1.5px;
+        border-style: solid;
+        border-radius: 7px;
+
 
         
         font-size: 1.15em;
         font-weight: bold;
-        color: var(--color1);
+        color: var(--color2);
         text-align: left;
     }
 
@@ -1312,17 +1338,19 @@ footer hr {
 
     /* 5% */
     .tokenomics .bar-container .reserve{
-        width: 16vw;
+        width: 12vw;
 
-        background-color: var(--color2);
-        border-color: var(--color1);
-        border-radius: 10px;
-        box-shadow: 0px 2px 4px black;
+        background-color: var(--color1);
+        border-color: var(--color2);
+        border-width: 1.5px;
+        border-style: solid;
+        border-radius: 7px;
+
 
         
         font-size: 1.15em;
         font-weight: bold;
-        color: var(--color1);
+        color: var(--color2);
         text-align: left;
     }
 
@@ -1341,7 +1369,7 @@ footer hr {
     .tokenomics .bar-container .total p
     {
         padding-top: 12px;
-        padding-left: 20px;
+        /* padding-left: 0px; */
     }
 
     .tokenomics .bar-container .cont-bar .liquidity-text .bold,
@@ -1381,7 +1409,7 @@ footer hr {
     {
         padding-top: 13.5px;
         padding-bottom: 10px;
-        padding-left: 3px;
+        padding-left: 5px;
         font-size: 1em;
     }
 
@@ -1401,7 +1429,7 @@ footer hr {
 
 
     .tokenomics .lp-container{
-        margin-top: 2.5vh;
+        margin-top: 2vh;
         margin-bottom: 4.3vh;
         margin-left: 0;
 
@@ -1418,9 +1446,12 @@ footer hr {
         height: 75px;
 
         background-color: #0a2d33;
-        border-color: var(--color1);
+        background-color: var(--color1);
+        border-color:  #0a2d33;
+        border-width: 1px;
+        border-style: solid;
         border-radius: 10px;
-        box-shadow: 0px 2px 4px black;
+        box-shadow: 0px 0.5px 1px black;
 
         
         
@@ -1603,6 +1634,7 @@ footer hr {
 
     .whitepaper .container p {
         margin: 10px 0;
+        font-size: 1em;
     }
 
     .whitepaper .container ul {
@@ -1618,14 +1650,14 @@ footer hr {
         font-weight: bold;
     }
 
-     /*--------------------------------------------------------------*/
+    /*--------------------------------------------------------------*/
     /* FOOTER                                                       */
     /*--------------------------------------------------------------*/
     footer {
         text-align: center;
         color: var(--color1);
         padding: 20px 0;
-        font-size: 14px;
+        font-size: 12px;
         background-color: var(--color2);
     }
 
@@ -1636,8 +1668,6 @@ footer hr {
         border-top: 1px solid black;
         font-weight: bold;
     }
-
-
 
 
 }
@@ -1915,7 +1945,6 @@ footer hr {
         background-color: var(--color2);
         border-color: var(--color1);
         border-radius: 10px;
-        box-shadow: 0px 2px 4px black;
 
         
         font-size: 1em;
@@ -1951,8 +1980,6 @@ footer hr {
         background-color: var(--color2);
         border-color: var(--color1);
         border-radius: 10px;
-        box-shadow: 0px 2px 4px black;
-
         
         font-size: 1em;
         font-weight: bold;
@@ -1980,8 +2007,6 @@ footer hr {
         background-color: var(--color2);
         border-color: var(--color1);
         border-radius: 10px;
-        box-shadow: 0px 2px 4px black;
-
         
         font-size: 1em;
         font-weight: bold;
@@ -2008,7 +2033,6 @@ footer hr {
         background-color: var(--color2);
         border-color: var(--color1);
         border-radius: 10px;
-        box-shadow: 0px 2px 4px black;
 
         
         font-size: 1em;
@@ -2036,19 +2060,12 @@ footer hr {
         background-color: var(--color2);
         border-color: var(--color1);
         border-radius: 10px;
-        box-shadow: 0px 2px 4px black;
 
         
         font-size: 1em;
         font-weight: bold;
         color: var(--color1);
         text-align: left;
-    }
-
-    .tokenomics .bar-container .community0 p
-    {
-        padding-top: 0px;
-        padding-left: 20px;
     }
 
     .tokenomics .bar-container .liquidity p, 
