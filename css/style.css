@@ -79,20 +79,17 @@ ul {
     background-color: var(--color1);
 }
 
-.main .header .landscape{
+.main .header .landscape { 
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 4vh;
-    
-    height: 29vh;
-    width: auto;
- 
+    margin-top: 7vh;
 }
 
-.main .header .landscape .responsive{
-    width: 100%;
-    height: auto;
+.main .header .landscape .responsive{ 
+    height: 40vh;
+    width: auto; 
+    
 }
 
 /* Socials */
@@ -101,8 +98,8 @@ ul {
     margin-left: auto;
     margin-right: auto;
 
-    padding-bottom: 17vh;
-    padding-top: 34vh;
+    padding-top: 17vh;
+    padding-bottom: 19vh;
 
 }
 
@@ -163,7 +160,7 @@ ul {
 }
 
 /*--------------------------------------------------------------*/
-/* About                                                        */
+/* Mission                                                      */
 /*--------------------------------------------------------------*/
 .about{
     background-color: var(--color1);
@@ -178,25 +175,27 @@ ul {
 }
 
 .about .container-para{
-    padding-top: 5%;
-    color: var(--color3);
     display: block;
-    text-align:justify;
+
     max-width: 95vw;
-    padding-right: 0%;
+
+    padding-top: 6vh;
+    padding-right: 0;
+
+    color: var(--color3);
+
+    text-align: justify;
 }
 
 .about .container-para .para{
     display: flex;
     padding: 0.5% 0.5%;
     font-size: 2em;
-    
-   
 }
 
 
 .about .container-para .img-about{
-    padding-top: 3%;
+    padding-top: 4%;
     width: 40%;
     height: auto;
     float: left;
@@ -225,8 +224,8 @@ ul {
 
 .roadmap .card-container{
     
-    padding-top: 4vh;
-    padding-bottom: 4.5vh;
+    padding-top: 5vh;
+    padding-bottom: 3.5vh;
     padding-left: 1.5%;
 
     display:inline-flex;
@@ -238,9 +237,13 @@ ul {
 .card{
     width: 330px;
     height: 600px;
-    background-color: var(--color2);
-    color: var(--color1);
+
+    background-color: var(--color1);
+    color: var(--color3);
+
     border-radius: 20px;
+    border: 1.5px var(--color2);
+    border-style:solid;
     overflow: hidden;
     box-shadow: 0px 2px 4px black;        
     margin-top: 2vh;
@@ -248,6 +251,22 @@ ul {
     margin-left: 2.2vh;
     margin-right: 1.5vh;
     display: block;
+}
+
+.card-content{
+    padding: 16px;
+}
+
+.card-content h3{
+    font-size: 1.35em;
+    margin-bottom: 8px;
+}
+
+.card .card-content p{
+    margin-bottom: 2.5%;
+    text-align: justify;
+    
+    font-size: 1.1em;
 }
 
 
@@ -287,15 +306,6 @@ ul {
     padding-top: 25px;
 }
 
-.card-content{
-    padding: 16px;
-}
-
-.card-content h3{
-    font-size: 1.35em;
-    margin-bottom: 8px;
-}
-
 .cex{
     padding-top: 4vh;
     padding-bottom: 6.5vh;
@@ -328,12 +338,12 @@ ul {
     justify-content:space-evenly;
     flex-wrap: wrap;
     padding-top: 3vh;
-    padding-left: 90px;
+    padding-left: 40px;
 }
 
 /* 100% */
 .tokenomics .bar-container .total{
-    width: 1700px;
+    width: 95vw;
     height: 100PX;
 
     background-color: var(--color2);
@@ -360,7 +370,7 @@ ul {
 
 /* 10% */
 .tokenomics .bar-container .cont-bar .presale1{
-    width: 170px;
+    width: 9.5vw;
 
     background-color: var(--color2);
     border-color: var(--color1);
@@ -375,7 +385,7 @@ ul {
 }
 
 .tokenomics .bar-container .cont-bar .presale1-text{
-    width: 1530px;
+    width: 80vw;
 
     color:var(--color3);
 
@@ -386,7 +396,7 @@ ul {
 
 /* 5% */
 .tokenomics .bar-container .cont-bar .presale2{
-    width: 90px;
+    width: 5vw;
 
     background-color: var(--color2);
     border-color: var(--color1);
@@ -401,7 +411,7 @@ ul {
 }
 
 .tokenomics .bar-container .cont-bar .presale2-text{
-    width: 1610px;
+    width: 90vw;
 
     color:var(--color3);
 
@@ -411,7 +421,7 @@ ul {
 
 /* 20% */
 .tokenomics .bar-container .cont-bar .liquidity{
-    width: 350px;
+    width: 20vw;
 
     background-color: var(--color2);
     border-color: var(--color1);
@@ -425,7 +435,7 @@ ul {
 }
 
 .tokenomics .bar-container .cont-bar .liquidity-text{
-    width: 1350px;
+    width: 75vw;
 
     color:var(--color3);
 
@@ -436,7 +446,7 @@ ul {
 
 /* 15% */
 .tokenomics .bar-container .marketing{
-    width: 250PX;
+    width: 15vw;
 
     background-color: var(--color2);
     border-color: var(--color1);
@@ -451,7 +461,7 @@ ul {
 }
 
 .tokenomics .bar-container .cont-bar .marketing-text{
-    width: 1450px;
+    width: 75vw;
 
     color:var(--color3);
 
@@ -461,7 +471,7 @@ ul {
 
 /* 10% */
 .tokenomics .bar-container .team{
-    width: 170px;
+    width: 9.5vw;
 
     background-color: var(--color2);
     border-color: var(--color1);
@@ -476,7 +486,7 @@ ul {
 }
 
 .tokenomics .bar-container .cont-bar .team-text{
-    width: 1530px;
+    width: 80vw;
 
     color:var(--color3);
 
@@ -487,7 +497,7 @@ ul {
 
 /* 15% */
 .tokenomics .bar-container .community{
-    width: 250PX;
+    width: 15vw;
 
     background-color: var(--color2);
     border-color: var(--color1);
@@ -502,7 +512,7 @@ ul {
 }
 
 .tokenomics .bar-container .cont-bar .community-text{
-    width: 1450px;
+    width: 75vw;
 
     color:var(--color3);
 
@@ -512,7 +522,7 @@ ul {
 
 /* 5% */
 .tokenomics .bar-container .reserve{
-    width: 90px;
+    width: 5vw;
 
     background-color: var(--color2);
     border-color: var(--color1);
@@ -576,14 +586,11 @@ ul {
 }
 
 .tokenomics .lp-container{
-    margin-top: 74vh;
+    margin-top: 73vh;
     margin-bottom: 4.3vh;
     display: block;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
     
-    margin-left: 8vw;
+    margin-left: 4.5vw;
 }
 
 
@@ -609,6 +616,7 @@ ul {
 
     display:inline-flex;
     margin-left: 0vw;
+    margin-right: 2vw;
 }
 
 .tokenomics .lp p{
@@ -844,20 +852,17 @@ footer hr {
         background-color: var(--color1);
     }
 
-    .main .header .landscape{
+    .main .header .landscape { 
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 8vh;
-        
-        height: 5vh;
-        width: auto;
-    
+        margin-top: 7vh;
     }
-
-    .main .header .landscape .responsive{
-        width: 100%;
-        height: auto;
+    
+    .main .header .landscape .responsive{ 
+        height: 11.5vh;
+        width: auto; 
+        
     }
 
     /* Socials */
@@ -990,7 +995,7 @@ footer hr {
         font-size: var(--mediaH2);
         color: var(--color2);
         padding-left: 1.5%;
-        padding-bottom: 0.5%;
+        padding-bottom: 0%;
     }
     
     .roadmap .card-container{
@@ -1000,67 +1005,87 @@ footer hr {
         align-items: center;
         margin-top: 0px;
         padding-bottom: 0px;
+        padding-top: 1px;
+        padding-left: 0;
     }
-    
+
     .card{
-        width: 280px;
-        height: 600px;
-        background-color: var(--color2);
-        color: var(--color1);
+        width: 330px;
+        height: auto;
+    
+        background-color: var(--color1);
+        color: var(--color3);
+    
         border-radius: 20px;
+        border: 2px var(--color2);
+        border-style:solid;
         overflow: hidden;
-        box-shadow: 0px 2px 4px black;
+        box-shadow: 0px 2px 4px black;        
         margin-top: 2vh;
-        margin-bottom: 2vh;
+        margin-bottom: 2.2vh;
         margin-left: 2vh;
         margin-right: 2vh;
+        display: block;
     }
-    
-    .card .roadmap-img1{
-        width: 215px;
-        height: 200px;
-        padding-left: 55px;
-        padding-top: 0px;
-    }
-    
-    .card .roadmap-img2{
-        width: 215px;
-        height: 200px;
-        padding-left: 55px;
-        padding-top: 15px;
-    }
-    
-    .card .roadmap-img3{
-        width: 235px;
-        height: 195px;
-        padding-left: 45px;
-        padding-top: 20px;
-        margin-bottom: 4px;
-    }
-    
-    .card .roadmap-img4{
-        width: 220px;
-        height: 200px;
-        padding-left: 50px;
-        padding-top: 25px;
-    }
-    
-    .card .roadmap-img5{
-        width: 250px;
-        height: 200px;
-        padding-left: 28px;
-        padding-top: 25px;
-    }
-    
+
     .card-content{
         padding: 16px;
     }
     
+    .card .card-content p{
+        margin-bottom: 2.5%;
+        text-align: justify;
+        
+        font-size: 1em;
+    }
+    
     .card-content h3{
-        font-size: 1.15em;
+        font-size: 1.2em;
         margin-bottom: 8px;
     }
 
+
+    .card .roadmap-img1{
+        /* width: 215px;
+        height: 200px;
+        padding-left: 55px;
+        padding-top: 0px; */
+        display: block;
+    }
+    
+    .card .roadmap-img2{
+        /* width: 215px;
+        height: 200px;
+        padding-left: 55px;
+        padding-top: 15px; */
+        display: block;
+    }
+    
+    .card .roadmap-img3{
+        /* width: 235px;
+        height: 195px;
+        padding-left: 45px;
+        padding-top: 20px;
+        margin-bottom: 4px; */
+        display: block;
+    }
+    
+    .card .roadmap-img4{
+        /* width: 220px;
+        height: 200px;
+        padding-left: 50px;
+        padding-top: 25px; */
+        display: block;
+    }
+    
+    .card .roadmap-img5{
+        /* width: 250px;
+        height: 200px;
+        padding-left: 28px;
+        padding-top: 25px; */
+        display: block;
+    }
+    
     .cex{
 
         color: var(--color3);
@@ -1376,8 +1401,9 @@ footer hr {
 
 
     .tokenomics .lp-container{
-        margin-top: 3.5vh;
+        margin-top: 2.5vh;
         margin-bottom: 4.3vh;
+        margin-left: 0;
 
         display:inline-flex;
         justify-content:space-evenly;
