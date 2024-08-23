@@ -870,17 +870,6 @@ ul {
     transition: opacity 0.5s ease;
 }
 
-
-.presale .wallet .limits {
-    display: flex;
-    width: 1480px;
-    justify-content: space-between;
-    margin-left: 11vw;
-    margin-top: 20px; /* Spazio sopra la barra, se necessario */
-    font-size: 1em; /* Riduci le dimensioni del testo per adattarle alla barra */
-    color: var(--color3);
-}
-
 /* COUNT-DOWN */
 .presale .countdown-container {
     text-align: center;
@@ -1088,7 +1077,7 @@ footer hr {
     /* COUNT-DOWN */
     .main .countdown-container {
         text-align: center;
-        padding-top: 17vh;
+        padding-top: 15vh;
         padding-bottom: 4vh;
     }
 
@@ -1102,7 +1091,7 @@ footer hr {
     #countdown {
         display: flex;
         justify-content: center;
-        gap: 5px;
+        gap: 10px;
         font-size: 0.7em;
     }
 
@@ -1111,10 +1100,10 @@ footer hr {
         padding-left: 4vw;
         padding-right: 4vw;
         border-radius: 10px;
-        border-width: 2px;
+        border-width: 0px;
         border-style: solid;
         border-color: #0a2d33;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
         color: var(--color2);
     }
 
@@ -1124,7 +1113,7 @@ footer hr {
         background-color: var(--color2);
         display: flex;
         justify-content:space-evenly;
-        font-size: 1.05em;
+        font-size: 1.4em;
         text-align: center;
     }
     
@@ -1889,16 +1878,6 @@ footer hr {
     }
 
 
-    .presale .wallet .limits {
-        display: flex;
-        width: 370px;
-        justify-content: space-between;
-        margin-left: 2.5vw;
-        margin-top: 20px; /* Spazio sopra la barra, se necessario */
-        font-size: 0.7em; /* Riduci le dimensioni del testo per adattarle alla barra */
-        color: var(--color3);
-    }
-
     /* COUNT-DOWN */
     .presale .countdown-container {
         text-align: center;
@@ -1915,7 +1894,7 @@ footer hr {
     #countdown2 {
         display: flex;
         justify-content: center;
-        gap: 5px;
+        gap: 10px;
         font-size: 0.7em;
     }
 
@@ -1924,10 +1903,10 @@ footer hr {
         padding-left: 4vw;
         padding-right: 4vw;
         border-radius: 10px;
-        border-width: 2px;
+        border-width: 0px;
         border-style: solid;
         border-color: #0a2d33;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
         color: var(--color2);
     }
 
