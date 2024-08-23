@@ -1092,7 +1092,7 @@ footer hr {
         display: flex;
         justify-content: center;
         gap: 10px;
-        font-size: 0.7em;
+        font-size: 0.75em;
     }
 
     #countdown div {
@@ -1814,7 +1814,7 @@ footer hr {
         text-align: center;
         position: relative;
         margin-top: 19vh;
-        margin-bottom: 17vh;
+        margin-bottom: 21vh;
     }
 
     .wallet .copy-box {
@@ -1895,7 +1895,7 @@ footer hr {
         display: flex;
         justify-content: center;
         gap: 10px;
-        font-size: 0.7em;
+        font-size: 0.75em;
     }
 
     #countdown2 div {
