@@ -25,6 +25,19 @@
                         <img src="images/Landscape.png" alt="" class="responsive">
                     </div>
 
+                        <!-- COUNT-DOWN -->
+                        <div class="countdown-container">
+                        <div class="countdown">
+                            <h3>presale starts in:</h3>
+                            <div id="countdown">
+                                <div><span id="days1">00</span> DAYS</div>
+                                <div><span id="hours1">00</span> HOURS</div>
+                                <div><span id="minutes1">00</span> MINUTES</div>
+                                <div><span id="seconds1">00</span> SECONDS</div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Socials -->
                     <div id="socials" class="socials">
                         <div class="socials-container">
@@ -33,6 +46,8 @@
                             <a href="https://www.instagram.com/tears.solana?igsh=YnZtdjZlbDhxYnNh" target="_blank" class="btn instagram-btn"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
+
+   
 
                     <!-- Navbar -->
                     <div class="navbar">
@@ -47,7 +62,7 @@
                                 <a href="#tokenomics">Tokenomics</a>
                             </li>
                             <li>
-                                <a href="#buy">Buy</a>
+                                <a href="#presale">Presale</a>
                             </li>
                             <li>
                                 <a href="#whitepaper">Whitepaper</a>
@@ -254,7 +269,9 @@
             </div>
 
         </div>
-        <div id="buy" class="buy">
+
+        <!-- BUY -->
+        <!-- <div id="buy" class="buy">
             <h2>BUY $Tears</h2>
 
             <div class="tools">
@@ -279,7 +296,49 @@
                 </div>
             </div>
 
-        </div>
+        </div> -->
+
+        <!-- Presale -->
+        <div id="presale" class="presale">
+            <h2>PRESALE</h2>
+
+                <!-- COUNT-DOWN -->
+                <div class="countdown-container">
+                <div class="countdown">
+                    <h3>STARTS IN:</h3>
+                    <div id="countdown2">
+                        <div><span id="days2">00</span> DAYS</div>
+                        <div><span id="hours2">00</span> HOURS</div>
+                        <div><span id="minutes2">00</span> MINUTES</div>
+                        <div><span id="seconds2">00</span> SECONDS</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wallet">
+                <h3>GET WALLET ADDRESS</h3>
+                <div class="copy-box" onclick="copyText()">
+                    <p id="text-to-copy">8oD1Hm41XauNKpstdd33JcAFrFqVKdepWZgCeNF3Av6d</p>
+                </div>
+                <div id="copy-overlay" class="copy-overlay">
+                    <span>You got it!</span>
+                </div>
+
+                <div class="limits">
+                    <div class="min">min: 0.1 SOL</div>
+                    <div class="max">max: 100 SOL</div>
+                </div>
+            </div>
+
+            <div class="howto">
+                <p>
+                    For $Tears presale, the minimum contribution is 0.1 SOL and the maximum is 100 SOL. Contributions below 0.1 SOL and above 100 SOL 
+                    won’t be refunded. Once the presale ends, all SOL sent will be non-refundable, so make sure you’re careful before sending.
+                </p>
+            </div>
+
+        </div>  
+
 
         <div id="whitepaper" class="whitepaper">
             <h2>Whitepaper</h2>
@@ -348,5 +407,6 @@
         </footer>
 
         <script src="js/script.js"></script>
+        <script src="js/countdown.js"></script>
     </body>
 </html>

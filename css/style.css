@@ -12,7 +12,7 @@ html {
     --color1: #0c343c;
     --color2: #f1c343;
     --color3: #e9e9e9;
-
+    --bckgLight: #1a505a;
     --mediaH2: 2.5em; 
 }
 
@@ -55,7 +55,7 @@ ul {
     height: 100vh;
 }
 
-.buy{
+.buy, .presale{
     width: auto;
     height: 100vh;
 }
@@ -83,14 +83,14 @@ ul {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 7vh;
+    margin-top: 5vh;
 }
 
 .main .header .landscape .responsive{ 
-    height: 40vh;
+    height: 37vh;
     width: auto; 
-    
 }
+
 
 /* Socials */
 .main .header .socials {
@@ -98,8 +98,10 @@ ul {
     margin-left: auto;
     margin-right: auto;
 
-    padding-top: 17vh;
-    padding-bottom: 19vh;
+    /* padding-top: 17vh; */
+    /* padding-bottom: 19vh; */
+    padding-top: 2vh;
+    padding-bottom: 10vh;
 
 }
 
@@ -130,6 +132,38 @@ ul {
 .btn:hover {
     transform: translateY(-4px);
 }
+
+/* COUNT-DOWN */
+.main .countdown-container {
+    text-align: center;
+    padding-top: 7vh;
+    padding-bottom: 8vh;
+}
+
+.main .countdown-container h3{
+    font-size: 2em;
+    padding-bottom: 1vh;
+    color: var(--color3);
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 2em;
+}
+
+#countdown div {
+    background-color:#1a505a;
+    padding: 20px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #0a2d33;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    color: var(--color2);
+}
+
 
 /* Navbar */
 .main .header .navbar{
@@ -641,7 +675,7 @@ ul {
 /*--------------------------------------------------------------*/
 /* Buy                                                          */
 /*--------------------------------------------------------------*/
-.buy{
+/* .buy{
     background-color: var(--color1);
     color: var(--color2);
     display: block;
@@ -747,6 +781,142 @@ ul {
 .copy-overlay.show {
     opacity: 0.8;
     transition: opacity 0.5s ease;
+} */
+
+
+/*--------------------------------------------------------------*/
+/* Presale                                                      */
+/*--------------------------------------------------------------*/
+.presale{
+    background-color: var(--color1);
+    color: var(--color2);
+    display: block;
+}
+
+.presale h2{
+    font-size: 3.5em;
+    color: var(--color2);
+    padding-left: 20px;
+}
+
+.presale .wallet h3{
+    font-size: 2.5em;
+    padding-bottom: 0.5vh;
+}
+
+.wallet {
+    text-align: center;
+    position: relative;
+    margin-top: 8vh;
+    margin-bottom: 16vh;
+}
+
+.wallet .copy-box {
+    background-color: var(--color1);
+
+    border-radius: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--color2);
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+
+    padding: 40px 300px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.wallet .copy-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.wallet .copy-box:active {
+    transform: scale(0.95);
+}
+
+.wallet .copy-box.dimmed {
+    opacity: 0;
+    transition: opacity 0.7s ease;
+}
+
+#text-to-copy {
+    font-weight: normal;
+    color: var(--color3);
+    transition: color 0.6s ease;
+}
+
+.wallet .copy-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.7s ease;
+    pointer-events: none;
+}
+
+.wallet .copy-overlay.show {
+    opacity: 0.8;
+    transition: opacity 0.5s ease;
+}
+
+
+.presale .wallet .limits {
+    display: flex;
+    width: 1480px;
+    justify-content: space-between;
+    margin-left: 11vw;
+    margin-top: 20px; /* Spazio sopra la barra, se necessario */
+    font-size: 1em; /* Riduci le dimensioni del testo per adattarle alla barra */
+    color: var(--color3);
+}
+
+/* COUNT-DOWN */
+.presale .countdown-container {
+    text-align: center;
+    padding-top: 6vh;
+    padding-bottom: 9vh;
+}
+
+.presale .countdown-container h3{
+    font-size: 2em;
+    padding-bottom: 1vh;
+    color: var(--color3);
+}
+
+#countdown2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 2em;
+}
+
+#countdown2 div {
+    background-color:#1a505a;
+    padding: 20px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #0a2d33;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    color: var(--color2);
+}
+
+.presale .howto{
+    padding-left: 5vh;
+    padding-right: 5vh;
+    font-size: 1.5em;
+    text-align: center;
 }
 
 
@@ -882,8 +1052,8 @@ footer hr {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 28vh;
-        padding-bottom: 29vh;
+        padding-top: 12vh;
+        padding-bottom: 16vh;
     }
     
     .main .header .socials .socials-container{
@@ -915,6 +1085,38 @@ footer hr {
     }
     
     
+    /* COUNT-DOWN */
+    .main .countdown-container {
+        text-align: center;
+        padding-top: 17vh;
+        padding-bottom: 4vh;
+    }
+
+    .main .countdown-container h3{
+        font-size: 1.1em;
+        padding-bottom: 1vh;
+        color: var(--color3);
+    }
+
+    #countdown {
+        display: flex;
+        justify-content: center;
+        gap: 3px;
+        font-size: 0.9em;
+    }
+
+    #countdown div {
+        background-color:#1a505a;
+        padding: 10px;
+        border-radius: 10px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #0a2d33;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        color: var(--color2);
+    }
+
+
     /* Navbar */
     .main .header .navbar{
         background-color: var(--color2);
@@ -956,7 +1158,7 @@ footer hr {
         font-size: 2.5em;
         color: var(--color2);
         padding-left: 1.5%;
-        padding-bottom: 0.5%;
+        padding-bottom: 1%;
     }
 
     .about .img-about{
@@ -970,16 +1172,18 @@ footer hr {
         color: var(--color3);
         display: block;
         text-align:left;
-        padding-right: 6%;
+        padding-right: 0%;
+        padding-left: 4%;
         font-size: auto;
         padding-top: 2vh;
     }
 
     .about .container-para .para{
         display: block;
-        padding-left: 7%;
+        padding-left: 0%;
         text-align: justify;
         font-size: 1em;
+        padding-top: 1.5vh;
     }
 
     .about .container-para .img-about{
@@ -1476,10 +1680,10 @@ footer hr {
 
 
 
-    /*--------------------------------------------------------------*/
+    /* -------------------------------------------------------------- */
     /* Buy                                                          */
     /*--------------------------------------------------------------*/
-    .buy{
+    /* .buy{
         background-color: var(--color1);
         color: var(--color3);
         display: block;
@@ -1592,6 +1796,143 @@ footer hr {
     .copy-overlay.show {
         opacity: 0.8;
         transition: opacity 0.5s ease;
+    } */
+
+    /*--------------------------------------------------------------*/
+    /* Presale                                                      */
+    /*--------------------------------------------------------------*/
+    .presale{
+        background-color: var(--color1);
+        color: var(--color2);
+        display: block;
+    }
+
+    .presale h2{
+        font-size: var(--mediaH2);
+        color: var(--color2);
+        padding-left: 1.5%;
+        padding-bottom: 0.5%;
+    }
+
+    .presale .wallet h3{
+        font-size: 1.2em;
+        padding-bottom: 0.5vh;
+    }
+
+    .wallet {
+        text-align: center;
+        position: relative;
+        margin-top: 20vh;
+        margin-bottom: 20vh;
+    }
+
+    .wallet .copy-box {
+        background-color: var(--color1);
+
+        border-radius: 35px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: var(--color2);
+
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+
+        padding: 25px 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        
+        font-size: 0.75em;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .wallet .copy-box:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .wallet .copy-box:active {
+        transform: scale(0.95);
+    }
+
+    .wallet .copy-box.dimmed {
+        opacity: 0;
+        transition: opacity 0.7s ease;
+    }
+
+    #text-to-copy {
+        font-weight: normal;
+        color: var(--color3);
+        transition: color 0.6s ease;
+    }
+
+    .wallet .copy-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 20px 40px;
+        border-radius: 10px;
+        opacity: 0;
+        transition: opacity 0.7s ease;
+        pointer-events: none;
+    }
+
+    .wallet .copy-overlay.show {
+        opacity: 0.8;
+        transition: opacity 0.5s ease;
+    }
+
+
+    .presale .wallet .limits {
+        display: flex;
+        width: 370px;
+        justify-content: space-between;
+        margin-left: 5vw;
+        margin-top: 20px; /* Spazio sopra la barra, se necessario */
+        font-size: 0.7em; /* Riduci le dimensioni del testo per adattarle alla barra */
+        color: var(--color3);
+    }
+
+    /* COUNT-DOWN */
+    .presale .countdown-container {
+        text-align: center;
+        padding-top: 10vh;
+        padding-bottom: 4vh;
+    }
+
+    .presale .countdown-container h3{
+        font-size: 1.2em;
+        padding-bottom: 1vh;
+        color: var(--color3);
+    }
+
+    #countdown2 {
+        display: flex;
+        justify-content: center;
+        gap: 3px;
+        font-size: 0.9em;
+    }
+
+    #countdown2 div {
+        background-color:#1a505a;
+        padding: 10px;
+        border-radius: 10px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #0a2d33;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        color: var(--color2);
+    }
+
+    .presale .howto{
+        padding-left: 1vh;
+        padding-right: 1vh;
+        font-size: 0.8em;
+        text-align: center;
     }
 
 
