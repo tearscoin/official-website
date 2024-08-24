@@ -1,5 +1,5 @@
 // Imposta la data e ora della scadenza
-var countDownDate = new Date("Aug 30, 2024 12:00:00").getTime();
+var countDownDate = new Date("Sept 2, 2024 12:00:00").getTime();
 
 // Funzione per aggiornare il countdown ogni secondo
 var countdownFunction = setInterval(function() {
