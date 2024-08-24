@@ -25,15 +25,27 @@
                         <img src="images/Landscape.png" alt="" class="responsive">
                     </div>
 
-                        <!-- COUNT-DOWN -->
-                        <div class="countdown-container">
+                    <!-- COUNT-DOWN -->
+                    <div class="countdown-container">
                         <div class="countdown">
                             <h3>presale starts in:</h3>
                             <div id="countdown">
-                                <div class="box"><span id="days1">00</span> DAYS</div>
-                                <div class="box"><span id="hours1">00</span> HOURS</div>
-                                <div class="box"><span id="minutes1">00</span> MINUTES</div>
-                                <div class="box"><span id="seconds1">00</span> SECONDS</div>
+                                <div class="box">
+                                    <span id="days1">00</span>
+                                    <span class="label">DAYS</span>
+                                </div>
+                                <div class="box">
+                                    <span id="hours1">00</span>
+                                    <span class="label">HOURS</span>
+                                </div>
+                                <div class="box">
+                                    <span id="minutes1">00</span>
+                                    <span class="label">MINUTES</span>
+                                </div>
+                                <div class="box">
+                                    <span id="seconds1">00</span>
+                                    <span class="label">SECONDS</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -62,7 +74,7 @@
                                 <a href="#tokenomics">Tokenomics</a>
                             </li>
                             <li>
-                                <a href="#presale">Presale</a>
+                                <a href="#presale" class="flash">Presale</a>
                             </li>
                             <li>
                                 <a href="#whitepaper">Whitepaper</a>
@@ -304,33 +316,60 @@
 
                 <!-- COUNT-DOWN -->
                 <div class="countdown-container">
-                <div class="countdown">
-                    <h3>STARTS IN:</h3>
-                    <div id="countdown2">
-                        <div class="box"><span id="days2">00</span> DAYS</div>
-                        <div class="box"><span id="hours2">00</span> HOURS</div>
-                        <div class="box"><span id="minutes2">00</span> MINUTES</div>
-                        <div class="box"><span id="seconds2">00</span> SECONDS</div>
+                    <div class="countdown">
+                        <h3>STARTS IN:</h3>
+                        <div id="countdown2">
+                            <div class="box">
+                                <span id="days2">00</span>
+                                <span class="label">DAYS</span>
+                            </div>
+                            <div class="box">
+                                <span id="hours2">00</span>
+                                <span class="label">HOURS</span>
+                            </div>
+                            <div class="box">
+                                <span id="minutes2">00</span>
+                                <span class="label">MINUTES</span>
+                            </div>
+                            <div class="box">
+                                <span id="seconds2">00</span>
+                                <span class="label">SECONDS</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
             <div class="wallet">
                 <h3>GET WALLET ADDRESS</h3>
                 <div class="copy-box" onclick="copyText()">
-                    <p id="text-to-copy">8oD1Hm41XauNKpstdd33JcAFrFqVKdepWZgCeNF3Av6d</p>
+                    <p id="text-to-copy">To Be Announced</p>
                 </div>
                 <div id="copy-overlay" class="copy-overlay">
                     <span>You got it!</span>
                 </div>
             </div>
 
-            <div class="howto">
+
+            <div class="guide">
+                <h1>HOW TO</h1>
+                <ul>
+                    <li>1. <span class="highlight">Get Presale Address:</span> Get the presale address from our official channels.</li>
+                    <li>2. <span class="highlight">Verify Requirements:</span> Ensure you have SOL in your wallet. Or buy them from a CEX.</li>
+                    <li>3. <span class="highlight">Setup your wallet:</span> Setup your DeFi wallet (e.g.: Phantom). Keep secret the seeds!</li>
+                    <li>4. <span class="highlight">Be careful:</span> Min. contribution is 0.1 SOL, max. is 100 SOL. What is below 0.1 SOL and above 100 SOL 
+                        won’t be refunded. Once the presale ends, all SOL sent will be non-refundable.
+                    </li>
+                    <li>5. <span class="highlight">Be sure:</span> Double-check presale address, you don't want to help scammers!</li>
+                    <li>6. <span class="highlight">Get $Tears:</span> Send your SOL and relax, you will receive your $Tears back after presale end!</li>
+                 </ul>
+            </div>
+
+            <!-- <div class="howto">
                 <p>
                     For $Tears presale, the minimum contribution is 0.1 SOL and the maximum is 100 SOL. Contributions below 0.1 SOL and above 100 SOL 
                     won’t be refunded. Once the presale ends, all SOL sent will be non-refundable, so make sure you’re careful before sending.
                 </p>
-            </div>
+            </div> -->
 
         </div>  
 
@@ -340,13 +379,13 @@
 
             <div class="container">
                 <h3>1. Join the $Tears Community</h3>
-                <p>We’re excited to launch <span class="highlight">$Tears</span>, the meme token that’s not just another cryptocurrency, but a unique project having the goal to provide mental support to pepople.</p>
+                <p>We’re excited to launch <span class="highlight">$Tears</span>, that’s not just another meme token, but a unique project having the goal to provide mental support to pepople.</p>
         
                 <h3>2. Token Details</h3>
                 <p><span class="highlight">Token Name:</span> $Tears</p>
                 <p><span class="highlight">Total Supply:</span> 1,000,000,000 Tokens</p>
                 <p><span class="highlight">Blockchain:</span> Solana</p>
-                <p>$Tears is designed to offer both value and fun, with a defined supply and a launch strategy aimed at maximizing impact.</p>
+                <p>$Tears is designed to offer both value, with a defined supply and a launch strategy aimed at maximizing impact.</p>
         
                 <h3>3. Why We Chose a 1 Billion Token Supply</h3>
                 <p>The decision to set $Tears supply at 1 Billion tokens was made for several strategic reasons:</p>
@@ -360,7 +399,7 @@
         
                 <h3>4. Tokenomics – How the Tokens Are Distributed</h3>
                 <ul>
-                    <li><span class="highlight">Presale 1 (Pre-Launch):</span> 100,000,000 Tokens (10% of the total supply) - Purpose: To create excitement and raise initial funds to kickstart the project.</li>
+                    <li><span class="highlight">Presale (Pre-Launch):</span> 100,000,000 Tokens (10% of the total supply) - Purpose: To create excitement and raise initial funds to kickstart the project.</li>
                     <li><span class="highlight">Postsale (Post-Launch):</span> 50,000,000 Tokens (5% of the total supply) - Purpose: To expand our user base and continue building interest after the official launch.</li>
                     <li><span class="highlight">Team and Founders:</span> 100,000,000 Tokens (10% of the total supply) with a 6 month lockup - Purpose: To reward the team and ensure they don’t sell immediately, providing stability.</li>
                     <li><span class="highlight">Development and Marketing:</span> 200,000,000 Tokens (20% of the total supply) - Purpose: To invest in the project’s future and launch effective marketing campaigns.</li>
@@ -370,7 +409,7 @@
                 </ul>
         
                 <h3>5. Presale Strategy</h3>
-                <p><span class="highlight">Presale 1:</span> This will help us kickstart the project and build initial interest.</p>
+                <p><span class="highlight">Presale:</span> This will help us kickstart the project and build initial interest.</p>
                 <p><span class="highlight">Postsale:</span> Get $Tears at a special price. This will further expand our investor base and sustain interest post-launch. However, be aware! You must hold a minimum amount of $Tears to participate.</p>
         
                 <h3>6. Liquidity Provision</h3>
@@ -384,9 +423,14 @@
                 <p><span class="highlight">How to Participate:</span> We are working on this!</p>
         
                 <h3>9. How to Participate in the Presale</h3>
-                <p>1. <span class="highlight">Register:</span> Follow the instructions on our website to access the presale.</p>
+                <p>1. <span class="highlight">Get Presale Address:</span> Get the presale address from our official channels.</p>
                 <p>2. <span class="highlight">Verify Requirements:</span> Ensure you have SOL in your wallet.</p>
-                <p>3. <span class="highlight">Get $Tears:</span> Send your SOL and relax, you will receive your $Tears back soon!</p>
+                <p>3. <span class="highlight">Setup your wallet:</span> Setup your DeFi wallet (e.g.: Phantom)</p>
+                <p>4. <span class="highlight">Be careful:</span> Min. contribution is 0.1 SOL, max. is 100 SOL. What is below 0.1 SOL and above 100 SOL 
+                    won’t be refunded. Once the presale ends, all SOL sent will be non-refundable, so be careful before sending.
+                </p>
+                <p>5. <span class="highlight">Be sure:</span> Double-check presale address, you don't want to help scammers!</p>
+                <p>6. <span class="highlight">Get $Tears:</span> Send your SOL and relax, you will receive your $Tears back after presale end!</p>
         
                 <h3>10. Conclusion</h3>
                 <p>$Tears is ready to take off, and we want you to be part of this journey! With solid tokenomics and a well-defined strategy, we are ready to make a difference in the world of meme tokens on Solana.</p>
@@ -402,6 +446,6 @@
         </footer>
 
         <script src="js/script.js"></script>
-        <script src="js/countdown.js"></script>
+        <script src="js/dateformating.js"></script>
     </body>
 </html>

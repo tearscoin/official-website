@@ -72,7 +72,7 @@ ul {
 
 /* HEADER */
 .main .header {
-    font-family: 'Mitr Regular', 'Poppins';
+    font-family: 'Poppins';
     font-weight: 400;
     display: block;
     text-align: center;
@@ -140,10 +140,11 @@ ul {
     padding-bottom: 8vh;
 }
 
-.main .countdown-container h3{
-    font-size: 2em;
+.main .countdown-container h3 {
+    font-size: 1.5em;
     padding-bottom: 1vh;
     color: var(--color3);
+    font-weight: 300;
 }
 
 #countdown {
@@ -151,19 +152,28 @@ ul {
     justify-content: center;
     gap: 20px;
     font-size: 2em;
+    font-weight: 400;
 }
 
-#countdown div {
-    background-color:#1a505a;
-    padding: 20px;
+#countdown .box {
+    background-color: #1a505a;
+    padding: 5px 80px;
     border-radius: 10px;
     border-width: 2px;
     border-style: solid;
     border-color: #0a2d33;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     color: var(--color2);
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Disposizione verticale */
+    align-items: center; /* Centra il contenuto */
 }
 
+#countdown .box .label {
+    font-size: 0.5em; /* Ridimensiona il testo delle etichette */
+    margin-top: 10px; /* Spazio tra il numero e l'etichetta */
+}
 
 /* Navbar */
 .main .header .navbar{
@@ -191,6 +201,19 @@ ul {
     opacity: 0.95;
     transition: 0.55s ease;
     transform: translateY(-3px);
+}
+
+
+/* Define the keyframes for flashing effect */
+@keyframes flash {
+    0% { color: var(--color2); }
+    25%{color: #164d54; }
+    100% { color: var(--color2); }
+}
+
+/* Apply the flashing effect to the element */
+.flash {
+    animation: flash 1.5s infinite;
 }
 
 /*--------------------------------------------------------------*/
@@ -800,15 +823,15 @@ ul {
 }
 
 .presale .wallet h3{
-    font-size: 2.5em;
+    font-size: 1.8em;
     padding-bottom: 0.5vh;
 }
 
 .wallet {
     text-align: center;
     position: relative;
-    margin-top: 8vh;
-    margin-bottom: 16vh;
+    margin-top:12vh;
+    margin-bottom: 13vh;
 }
 
 .wallet .copy-box {
@@ -821,13 +844,13 @@ ul {
 
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 
-    padding: 40px 300px;
+    padding: 10px 300px;
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
     
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
@@ -873,12 +896,12 @@ ul {
 /* COUNT-DOWN */
 .presale .countdown-container {
     text-align: center;
-    padding-top: 6vh;
-    padding-bottom: 9vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 
-.presale .countdown-container h3{
-    font-size: 2em;
+.presale .countdown-container h3 {
+    font-size: 1.8em;
     padding-bottom: 1vh;
     color: var(--color3);
 }
@@ -887,27 +910,71 @@ ul {
     display: flex;
     justify-content: center;
     gap: 20px;
-    font-size: 2em;
+    font-size: 1.8em;
+    font-weight: 400;
 }
 
-#countdown2 div {
-    background-color:#1a505a;
-    padding: 20px;
+#countdown2 .box {
+    background-color: #1a505a;
+    padding: 0px 80px;
     border-radius: 10px;
     border-width: 2px;
     border-style: solid;
     border-color: #0a2d33;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     color: var(--color2);
-}
-
-.presale .howto{
-    padding-left: 5vh;
-    padding-right: 5vh;
-    font-size: 1.5em;
     text-align: center;
+    display: flex;
+    flex-direction: column; /* Disposizione verticale */
+    align-items: center; /* Centra il contenuto */
 }
 
+#countdown2 .box .label {
+    font-size: 0.5em; /* Ridimensiona il testo delle etichette */
+    margin-top: 10px; /* Spazio tra il numero e l'etichetta */
+}
+
+/* HOW TO */
+.presale .guide {
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 20px;
+    padding: 8px;
+    margin-top: 10vh;
+    background-color: var(--bckgLight);
+    border: 1px solid var(--color1);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.presale .guide h1 {
+    font-size: 24px;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    color: var(--color3);
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.presale .guide ul {
+    list-style-type: none;
+    padding: 0;
+    color: var(--color3);
+}
+
+.presale .guide li {
+    padding: 10px;
+    border-bottom: 1px solid var(--color3);
+}
+
+.presale .guide li:last-child {
+    border-bottom: none;
+}
+
+.presale .guide .highlight {
+    color: var(--color2);
+    font-weight: bold;
+}
 
 /*--------------------------------------------------------------*/
 /* Whitepaper                                                   */
@@ -1016,11 +1083,12 @@ footer hr {
 
     /* HEADER */
     .main .header {
-        font-family: 'Mitr Regular', 'Poppins';
+        font-family: 'Poppins';
         font-weight: 400;
         display: block;
         text-align: center;
         background-color: var(--color1);
+        margin-top: 5vh;
     }
 
     .main .header .landscape { 
@@ -1041,8 +1109,8 @@ footer hr {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 13vh;
-        padding-bottom: 16vh;
+        padding-top: 17vh;
+        padding-bottom: 15vh;
     }
     
     .main .header .socials .socials-container{
@@ -1074,37 +1142,46 @@ footer hr {
     }
     
     
-    /* COUNT-DOWN */
+    /* COUNT-DOWN */ 
     .main .countdown-container {
         text-align: center;
         padding-top: 15vh;
-        padding-bottom: 4vh;
+        padding-bottom: 0vh;
     }
 
-    .main .countdown-container h3{
+    .main .countdown-container h3 {
         font-size: 1.1em;
         padding-bottom: 1vh;
         color: var(--color3);
+        font-weight: 400;
     }
-
 
     #countdown {
         display: flex;
         justify-content: center;
-        gap: 10px;
-        font-size: 0.75em;
+        gap: 5px;
+        font-size: 1.1em;
+        font-weight: 300;
     }
 
-    #countdown div {
-        background-color:#1a505a;
-        padding-left: 4vw;
-        padding-right: 4vw;
+    #countdown .box {
+        background-color: #1a505a;
+        padding: 0px 25px;
         border-radius: 10px;
-        border-width: 0px;
+        border-width: 2px;
         border-style: solid;
         border-color: #0a2d33;
-        box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
         color: var(--color2);
+        text-align: center;
+        display: flex;
+        flex-direction: column; /* Disposizione verticale */
+        align-items: center; /* Centra il contenuto */
+    }
+
+    #countdown .box .label {
+        font-size: 0.5em; /* Ridimensiona il testo delle etichette */
+        margin-top: 10px; /* Spazio tra il numero e l'etichetta */
     }
 
 
@@ -1113,7 +1190,7 @@ footer hr {
         background-color: var(--color2);
         display: flex;
         justify-content:space-evenly;
-        font-size: 1.4em;
+        font-size: 1.3em;
         text-align: center;
     }
     
@@ -1134,6 +1211,18 @@ footer hr {
         opacity: 1;
         transition: none;
         transform: none;
+    }
+
+    /* Define the keyframes for flashing effect */
+    @keyframes flash {
+        0% { color: var(--color2); }
+        25%{color: #164d54; }
+        100% { color: var(--color2); }
+    }
+
+    /* Apply the flashing effect to the element */
+    .flash {
+        animation: flash 2s infinite;
     }
 
     /*--------------------------------------------------------------*/
@@ -1796,25 +1885,113 @@ footer hr {
         background-color: var(--color1);
         color: var(--color2);
         display: block;
+        max-width: 98vw;
+        margin-left: 2px;
     }
 
     .presale h2{
         font-size: var(--mediaH2);
         color: var(--color2);
         padding-left: 1.5%;
-        padding-bottom: 0.5%;
+        padding-bottom: 0%;
     }
 
-    .presale .wallet h3{
+    /* COUNT-DOWN */
+    .presale .countdown-container {
+        text-align: center;
+        padding-top: 0.5vh;
+        padding-bottom: 0vh;
+    }
+
+    .presale .countdown-container h3 {
+        font-size: 1.1em;
+        padding-bottom: 1vh;
+        color: var(--color3);
+        font-weight: 300;
+    }
+
+    #countdown2 {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        font-size: 1.1em;
+        font-weight: 400;
+    }
+
+    #countdown2 .box {
+        background-color: #1a505a;
+        padding: 0px 25px;
+        border-radius: 10px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #0a2d33;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+        color: var(--color2);
+        text-align: center;
+        display: flex;
+        flex-direction: column; /* Disposizione verticale */
+        align-items: center; /* Centra il contenuto */
+    }
+
+    #countdown2 .box .label {
+        font-size: 0.5em; /* Ridimensiona il testo delle etichette */
+        margin-top: 10px; /* Spazio tra il numero e l'etichetta */
+    }
+
+        
+    /* HOW TO */
+    .presale .guide {
+        max-width: 90vw;
+        margin: 0 auto;
+        padding: 8px;
+        margin-top: 4vh;
+        background-color: var(--bckgLight);
+        border: 1px solid var(--color1);
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .presale .guide h1 {
+        font-size: 24px;
+        margin-top: 12px;
+        margin-bottom: 5px;
+        color: var(--color3);
+        text-align: center;
         font-size: 1.2em;
+    }
+
+    .presale .guide ul {
+        list-style-type: none;
+        padding: 0;
+        color: var(--color3);
+    }
+
+    .presale .guide li {
+        padding: 10px;
+        border-bottom: 1px solid var(--color3);
+        font-size: 0.9em;
+    }
+
+    .presale .guide li:last-child {
+        border-bottom: none;
+    }
+
+    .presale .guide .highlight {
+        color: var(--color2);
+        font-weight: bold;
+    }
+
+    /* Wallet */
+    .presale .wallet h3{
+        font-size: 1.1em;
         padding-bottom: 0.5vh;
     }
 
     .wallet {
         text-align: center;
         position: relative;
-        margin-top: 19vh;
-        margin-bottom: 21vh;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
     }
 
     .wallet .copy-box {
@@ -1827,7 +2004,7 @@ footer hr {
 
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 
-        padding: 25px 25px;
+        padding: 15px 125px;
         cursor: pointer;
         transition: all 0.3s ease;
         position: relative;
@@ -1877,38 +2054,6 @@ footer hr {
         transition: opacity 0.5s ease;
     }
 
-
-    /* COUNT-DOWN */
-    .presale .countdown-container {
-        text-align: center;
-        padding-top: 10vh;
-        padding-bottom: 4vh;
-    }
-
-    .presale .countdown-container h3{
-        font-size: 1.2em;
-        padding-bottom: 1vh;
-        color: var(--color3);
-    }
-
-    #countdown2 {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        font-size: 0.75em;
-    }
-
-    #countdown2 div {
-        background-color:#1a505a;
-        padding-left: 4vw;
-        padding-right: 4vw;
-        border-radius: 10px;
-        border-width: 0px;
-        border-style: solid;
-        border-color: #0a2d33;
-        box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
-        color: var(--color2);
-    }
 
     .presale .howto{
         padding-left: 1vh;
