@@ -1168,7 +1168,7 @@ footer hr {
         background-color: #1a505a;
         padding: 0px 25px;
         border-radius: 10px;
-        border-width: 2px;
+        border-width: 0.5px;
         border-style: solid;
         border-color: #0a2d33;
         box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
@@ -1887,6 +1887,8 @@ footer hr {
         display: block;
         max-width: 98vw;
         margin-left: 2px;
+        min-height: 100vh;
+        height: auto;
     }
 
     .presale h2{
@@ -1899,8 +1901,8 @@ footer hr {
     /* COUNT-DOWN */
     .presale .countdown-container {
         text-align: center;
-        padding-top: 0.5vh;
-        padding-bottom: 0vh;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
     }
 
     .presale .countdown-container h3 {
@@ -1922,7 +1924,7 @@ footer hr {
         background-color: #1a505a;
         padding: 0px 25px;
         border-radius: 10px;
-        border-width: 2px;
+        border-width: 0.5px;
         border-style: solid;
         border-color: #0a2d33;
         box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
@@ -1990,8 +1992,8 @@ footer hr {
     .wallet {
         text-align: center;
         position: relative;
-        margin-top: 3vh;
-        margin-bottom: 3vh;
+        margin-top: 4vh;
+        margin-bottom: 7vh;
     }
 
     .wallet .copy-box {
